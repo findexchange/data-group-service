@@ -1,32 +1,24 @@
-from flask import Flask,jsonify
+from flask import Flask
 from flask import request
-from flask import abort
+from flask import jsonify
 from data_sort import data_sort
 
 app = Flask(__name__)
 
 
-@app.route('/app/v1.0/return', methods = ['GET'])
-
-def get_clean_data():
-	data_tasks = test.group_by_tag()
-	return jsonify({'tasks': data_tasks})
-
-
-
-@app.route('/app/v1.0/upload', methods = ['post'])
+@app.route('/app/v1.0/upload', methods = ['POST','GET'])
 def input_data():
-	global test
+	import json
 
-
-	f = request.get_json()
-	if f is not request.json:
-		abort(404)
-	test = data_sort(f)
-	t = len(f)
-	return jsonify({'task': t}), 201
-
+	data = json.dumps(request.data)
+	start_sorting = data_sort(data)
+	results = start_sorting.group_by_tag()
+	return jsonify({'results': results}), 201
 
 
 if __name__ == '__main__':
 	app.run(debug = True)
+
+
+
+#curl -i -H "Content-Type: application/json"  -X POST http://127.0.0.1:5000/app/v1.0/upload -d @sample_input.json
