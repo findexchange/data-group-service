@@ -4,36 +4,29 @@ import re
 import json
 import numpy as np
 
-def threaded(fn):
-	def wrapper(*args, **kwargs):
-		threading.Thread(target=fn, args=args, kwargs=kwargs).start()
-	return wrapper
 
 class data_sort:
-
-
 
 	def __init__(self, data):
 		self.data = data
 		self.all_data_df = self.aggreate_all()
 
-
 	def read_data(self):
-		if self.data[-3:] == 'csv':
-			data = pd.read_csv(self.data)
-		
-		elif self.data[-4:] == 'json':
+		try:
 			data = pd.read_json(self.data)
-		else:
-			print 'please use data format in json or csv'
-			data =pd.read_json('./sample_input.json')
+		except(ValueError):
+			print 'please use data format in Json'
+			data = ''
+			
 		return data
 
+	#encoding for different langugages	
 	@staticmethod
 	def encode_data(strings):
 		strings  = strings.decode('unicode_escape').encode('ascii', 'ignore') 
 		return strings
 
+	#put word in lowercase and clean any suffix	
 	@staticmethod	
 	def lower_clean_suffix(strings):
 			strings = strings.lower()
@@ -44,6 +37,8 @@ class data_sort:
 			pattern3 = re.compile(r'\([\d]+\)')
 			strings = pattern3.sub('',strings).strip()
 			return strings
+
+	#Clean non-characters		
 	@staticmethod		
 	def replace_no_char(strings):
 			strings = strings.replace('- ', '')
@@ -54,14 +49,14 @@ class data_sort:
 			strings = pattern.sub('', strings).strip()
 			return strings	    
 
-
+	#Add begin and end mark to each name.e.g <s></s>
 	@staticmethod		
 	def add_break(strings):
 		strings = '<s>'+ strings + '</s>'
 		return strings	    
 
-	
-	def get_names(self):
+	#return cleaned names
+	def get_clean_names(self):
 		dataframe = self.read_data()
 		dataframe['name'] = dataframe['name'].apply(self.encode_data)
 		dataframe['name'] = dataframe['name'].apply(self.lower_clean_suffix)
@@ -70,6 +65,7 @@ class data_sort:
 		return dataframe['name']
 
 
+	#break down all the names in to a list
 	@staticmethod	
 	def one_word_list(series):
 			all_list = []
@@ -80,12 +76,13 @@ class data_sort:
 						 all_list.append(i)
 			return all_list
 			
-
+	#N-grams generator	
 	@staticmethod		
 	def get_ngram(input,n):
 		return zip(*[input[i:] for i in range(n)])	     
 
 	
+	#Delete the words that not start and end with <s> word </s>
 	@staticmethod	
 	def delete_nonsense(count_dict):
 		for items in count_dict.keys():
@@ -97,6 +94,8 @@ class data_sort:
 					del count_dict[item]
 		return count_dict
 
+
+	#remove begin and end marks	
 	@staticmethod
 	def tranformations(strings):
 		strings = ' '.join(strings)
@@ -107,8 +106,11 @@ class data_sort:
 		return strings    
 
 
+
+	#put all together, return a dataframe with all keywords	that has frequency larger than 2
+	#They are treated as tags
 	def aggreate_all(self, n = 2):
-		name_series = self.get_names()
+		name_series = self.get_clean_names()
 		one_word = self.one_word_list(name_series)
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
 		bigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,2)))
@@ -121,20 +123,20 @@ class data_sort:
 		data_tri['name'] = data_tri['name'].apply(self.tranformations)
 		name_uni = data_uni.name[data_uni.frequency >= 2]
 		name_bi = data_bi.name
-
+		#Compare one word with two words, if contains one word replace two with one word.
+		#This only for one word that have frequence larger than 2.
 		for shorter_name in name_uni:
 			check = shorter_name
 			if np.any(data_bi[name_bi.str.contains(check)]['name'] != pd.Series.empty):
 				data_bi.loc[name_bi.str.contains(check),'name'] = check
-		# results_index.extend(data_bi[name_bi.str.contains(check)]['name'].index)
-
 		
-		# data_bi.name = name_bi
 		all_data_df = pd.concat([data_uni, data_bi, data_tri])
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
+		#return keyword that has frequency larger than 2
 		return all_data_df[all_data_df['frequency']>n].reset_index().drop(['index'], axis = 1)
 
 
+	#Tag each row with each keywords generated previous
 	def tagging(self,target_df):
 		for name in self.all_data_df.name:
 			check_word = name
@@ -145,15 +147,15 @@ class data_sort:
 		return target_df    
 
 	
-
+	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		# all_data_df = self.aggreate_all()
 		data['tags'] =  data.name.apply(self.tagging)
-		return data #.to_json(orient = 'records')
+		return data 
 
 
-	def group_by_tag(self):
+	#Orgnize the results in to required format
+	def output_data(self):
 		data = self.get_tagged()
 		new_data1 = data.groupby('tags')['_id'].apply(lambda x: '[%s]' % ','.join(x)).reset_index()
 		new_data2 = data.groupby('tags').count().reset_index().drop(['_id'], axis = 1).rename(columns = {'name':'Count'})
@@ -165,7 +167,3 @@ class data_sort:
 
 
 
-# f = '../../findex-extracted-data.csv'
-f = '../../flaskapp/sample_input.json'
-test = data_sort(f)
-test.get_tagged().to_csv('test_results.csv')
