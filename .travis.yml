@@ -6,5 +6,5 @@ install:
   - 'pip install -r requirements.txt'
 
 #run tests
-scripts: 
+script: 
   - python ./test/flask_test.py
