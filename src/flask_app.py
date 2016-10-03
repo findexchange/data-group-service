@@ -16,24 +16,26 @@ def input_data():
 		data = request.data
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
-
-	except(ValueError):
-		results = "No results sent"
-
-	return results, 200
+		status  = 'success'
+		import json
+		return json.dumps({'status': status, 'results':json.loads(results)}), 200
+	except:
+		status = 'error'
+		results = 'data format not recoginzed'
+	
+		return jsonify({'status': status, 'error':results }), 400
 
 
 #Page not found
 @app.errorhandler(404)
 def not_found(exception):
-	return make_response(jsonify({'Error': 'Page not found'}), 404)
+	return make_response(jsonify({'error': 'page not found'}), 404)
 
 
 #Internal Error
 @app.errorhandler(500)
 def server_error(exception):
-	return make_response(jsonify({'Error': "Internal Server Error"}), 500)
-
+	return make_response(jsonify({'error': "internal server error"}), 500)
 
 
 if __name__ == '__main__':
@@ -44,6 +46,6 @@ if __name__ == '__main__':
 	handler.setLevel(logging.INFO)
 	formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 	handler.setFormatter(formatter)
-	app.logger.info('Data sorting services is running')
+	app.logger.info('data sorting services is running')
 	app.logger.addHandler(handler)
-	app.run()
+	app.run(port = 8080)
