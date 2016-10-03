@@ -12,7 +12,7 @@ class FlaskrTestCase(unittest.TestCase):
 		flask_app.app.config['TESTING'] = True
 		self.app = flask_app.app.test_client()
 		self.data_sort = data_sort
-		self.file = './sample_input.json'
+		self.file = os.path.join(os.path.dirname(__file__),'./sample_input.json')
 
 
 	#Test input data type and check response code
