@@ -1,0 +1,10 @@
+version: '2'
+services:
+  data-group-service:
+    container_name: data-group-service
+    build: .
+    volumes:
+      - ./src:/usr/src/app:rw
+    ports:
+      - 5000:5000
+    restart: always
