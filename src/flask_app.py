@@ -48,4 +48,4 @@ if __name__ == '__main__':
 	handler.setFormatter(formatter)
 	app.logger.info('data sorting services is running')
 	app.logger.addHandler(handler)
-	app.run(port = 8080)
+	app.run()
