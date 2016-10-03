@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 #Post json data 
-@app.route('/app/v1.0/datasort', methods = ['POST'])
+@app.route('/api/v1.0/datasort', methods = ['POST'])
 def input_data():
 	try:
 		data = request.data
