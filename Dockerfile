@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:2.7
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -10,4 +10,4 @@ COPY ./src /usr/src/app
 
 EXPOSE 5000
 
-CMD ["python3", "flask_app.py"]
+CMD ["python", "flask_app.py"]
