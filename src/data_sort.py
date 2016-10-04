@@ -156,12 +156,12 @@ class data_sort:
 	#Orgnize the results in to required format
 	def output_data(self):
 		data = self.get_tagged()
-		new_data1 = data.groupby('tags')['_id'].apply(lambda x: '[%s]' % ','.join(x)).reset_index()
+		new_data1 = data.groupby('tags')['_id'].apply(lambda x: "%s" % ",".join(x).split(",")).reset_index()
 		new_data2 = data.groupby('tags').count().reset_index().drop(['_id'], axis = 1).rename(columns = {'name':'count'})
 		combined_output = pd.merge(new_data1, new_data2, on = 'tags').rename(columns={'_id':'rows'})
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
-		return combined_output.to_json(orient = 'records')
+		return json.dumps(combined_output.to_json(orient = 'records').replace('"[',"[").replace(']"',']'))
 
 
 
