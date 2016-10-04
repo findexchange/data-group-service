@@ -17,7 +17,7 @@ def input_data():
 		data = request.data
 	else:
 		data = request.values['data']
-		data_m = json.loads(data)
+		
 	try:
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
