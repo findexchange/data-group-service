@@ -12,18 +12,24 @@ app = Flask(__name__)
 #Post json data 
 @app.route('/api/v1.0/datasort', methods = ['POST'])
 def input_data():
-	try:
+	import json
+	if len(request.data)>0:
 		data = request.data
+	else:
+		data = request.values['data']
+		data_m = json.loads(data)
+	try:
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
 		status  = 'success'
-		import json
 		return json.dumps({'status': status, 'results':json.loads(results)}), 200
-	except:
+
+	except Exception ,e:
 		status = 'error'
 		results = 'data format not recoginzed'
-	
-		return jsonify({'status': status, 'error':results }), 400
+
+		return jsonify({'status': status, 'error':str(e),'results':data}), 400
+
 
 
 #Page not found

@@ -17,7 +17,6 @@ class data_sort:
 		except(ValueError):
 			print 'please use data format in Json'
 			data = ''
-			
 		return data
 
 	#encoding for different langugages	
@@ -150,7 +149,7 @@ class data_sort:
 	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		data['tags'] =  data.name.apply(self.tagging)
+		data['tags'] =  data.name.apply(lambda x:x.lower()).apply(self.tagging)
 		return data 
 
 
@@ -163,6 +162,9 @@ class data_sort:
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
+
+
+
 
 
 
