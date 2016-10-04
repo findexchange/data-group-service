@@ -54,4 +54,4 @@ if __name__ == '__main__':
 	handler.setFormatter(formatter)
 	app.logger.info('data sorting services is running')
 	app.logger.addHandler(handler)
-	app.run()
+	app.run('0.0.0.0', 5000)
