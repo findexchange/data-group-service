@@ -22,31 +22,31 @@ class data_sort:
 	#encoding for different langugages	
 	@staticmethod
 	def encode_data(strings):
-		strings  = strings.decode('unicode_escape').encode('ascii', 'ignore') 
+		strings  = strings.encode('ascii', 'ignore') 
 		return strings
 
 	#put word in lowercase and clean any suffix	
 	@staticmethod	
 	def lower_clean_suffix(strings):
-			strings = strings.lower()
-			pattern = re.compile(r'-\s[\w\s]+')
-			strings = pattern.sub('', strings).strip()
-			pattern2 = re.compile(r'-\s#[\d]+')
-			strings = pattern2.sub('',strings).strip()
-			pattern3 = re.compile(r'\([\d]+\)')
-			strings = pattern3.sub('',strings).strip()
-			return strings
+		strings = strings.lower()
+		pattern = re.compile(r'-\s[\w\s]+')
+		strings = pattern.sub('', strings).strip()
+		pattern2 = re.compile(r'-\s#[\d]+')
+		strings = pattern2.sub('',strings).strip()
+		pattern3 = re.compile(r'\([\d]+\)')
+		strings = pattern3.sub('',strings).strip()
+		return strings
 
 	#Clean non-characters		
 	@staticmethod		
 	def replace_no_char(strings):
-			strings = strings.replace('- ', '')
-			strings = strings.replace('&', '')
-			strings = strings.replace('(', '')
-			strings = strings.replace(')',"")
-			pattern = re.compile(r'#[a-z0-9]*')
-			strings = pattern.sub('', strings).strip()
-			return strings	    
+		strings = strings.replace('- ', '')
+		strings = strings.replace('&', '')
+		strings = strings.replace('(', '')
+		strings = strings.replace(')',"")
+		pattern = re.compile(r'#[a-z0-9]*')
+		strings = pattern.sub('', strings).strip()
+		return strings	    
 
 	#Add begin and end mark to each name.e.g <s></s>
 	@staticmethod		
@@ -105,7 +105,22 @@ class data_sort:
 		return strings    
 
 
+	@staticmethod
+	def replace_no_char_on_tag(strings):
+		strings = strings.replace('-', '')
+		strings = strings.replace('.', '')
+		strings = strings.replace(',', '')
+		strings = strings.replace('\"', '')
+		strings = strings.replace('+', '')
+		return strings
 
+	@staticmethod
+	def place_nan(string):
+		if len(string) == 0:
+			string = np.nan
+		return string
+
+		
 	#put all together, return a dataframe with all keywords	that has frequency larger than 2
 	#They are treated as tags
 	def aggreate_all(self, n = 2):
@@ -131,6 +146,9 @@ class data_sort:
 		
 		all_data_df = pd.concat([data_uni, data_bi, data_tri])
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
+		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
+		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
+		all_data_df.name = all_data_df.name.apply(lambda x: str(x))
 		#return keyword that has frequency larger than 2
 		return all_data_df[all_data_df['frequency']>n].reset_index().drop(['index'], axis = 1)
 
@@ -149,7 +167,8 @@ class data_sort:
 	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		data['tags'] =  data.name.apply(lambda x:x.lower()).apply(self.tagging)
+		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.tagging)
+		# data.applymap(self.encode_data).to_csv('results.csv') this line is for local testing 
 		return data 
 
 
@@ -162,6 +181,7 @@ class data_sort:
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
 		return json.dumps(combined_output.to_json(orient = 'records').replace('"[',"[").replace(']"',']'))
+
 
 
 
