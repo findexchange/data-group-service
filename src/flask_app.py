@@ -27,7 +27,7 @@ def input_data():
 	except Exception ,e:
 		status = 'error'
 		results = 'data format not recoginzed'
-		return jsonify({'status': status, 'error':str(e),'results':'no data in the results'}), 400
+		return jsonify({'error':str(e),'status': status, 'results':"[no data in the results]"}), 400
 
 
 
