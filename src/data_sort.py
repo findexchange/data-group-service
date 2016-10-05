@@ -22,8 +22,12 @@ class data_sort:
 	#encoding for different langugages	
 	@staticmethod
 	def encode_data(strings):
-		strings  = strings.encode('ascii', 'ignore') 
-		return strings
+		try:
+			strings  = strings.encode('ascii', 'ignore') 
+		except Exception as e:
+			strings = strings.decode('unicode_escape').encode('ascii','ignore')
+		finally:
+			return strings
 
 	#put word in lowercase and clean any suffix	
 	@staticmethod	
