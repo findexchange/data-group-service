@@ -22,7 +22,7 @@ def input_data():
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
 		status  = 'success'
-		return json.dumps({'status': status, 'results':results}).replace('}]"','}]').replace('"{[','{['), 200
+		return jsonify({'status': status, 'results':json.loads(results)}), 200
 
 	except Exception ,e:
 		status = 'error'
