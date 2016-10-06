@@ -22,7 +22,7 @@ def input_data():
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
 		status  = 'success'
-		return json.dumps({'status': status, 'results':results}).replace('}]"','}]').replace('"{[','{['), 200
+		return jsonify({'status': status, 'results':json.loads(results)}), 200
 
 	except Exception ,e:
 		status = 'error'
@@ -37,10 +37,12 @@ def not_found(exception):
 	return make_response(jsonify({'error': 'page not found'}), 404)
 
 
+
 #Internal Error
 @app.errorhandler(500)
 def server_error(exception):
 	return make_response(jsonify({'error': "internal server error"}), 500)
+
 
 
 if __name__ == '__main__':
