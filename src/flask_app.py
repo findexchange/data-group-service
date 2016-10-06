@@ -22,7 +22,7 @@ def input_data():
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
 		status  = 'success'
-		return json.dumps({'status': status, 'results':results}).replace('}]"','}]').replace('"{[','{['), 200
+		return jsonify({'status': status, 'results':json.loads(results)}), 200
 
 	except Exception ,e:
 		status = 'error'
@@ -53,4 +53,4 @@ if __name__ == '__main__':
 	handler.setFormatter(formatter)
 	app.logger.info('data sorting services is running')
 	app.logger.addHandler(handler)
-	app.run('0.0.0.0', 5000)
+	app.run()
