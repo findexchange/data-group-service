@@ -22,12 +22,12 @@ def input_data():
 		start_sorting = data_sort(data)
 		results = start_sorting.output_data()
 		status  = 'success'
-		return json.dumps({'status': status, 'results':json.loads(results)}), 200
+		return json.dumps({'status': status, 'results':results}).replace('}]"','}]').replace('"{[','{['), 200
 
 	except Exception ,e:
 		status = 'error'
 		results = 'data format not recoginzed'
-		return jsonify({'status': status, 'error':str(e),'results':data}), 400
+		return jsonify({'error':str(e),'status': status}), 400
 
 
 

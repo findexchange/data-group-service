@@ -28,7 +28,9 @@ class FlaskrTestCase(unittest.TestCase):
 		upload_data = self.app.post('/api/v1.0/datasort', data= self.file)
 		print 'Comparing the number in groups with count column.'
 		import json
-		result = json.loads(upload_data.data)['results']
+		data = upload_data.data.replace(':[', ':\\"[').replace('],',']\\",').replace('}]}','}]"}')
+		ready_data = json.loads(data)['results'].encode('utf-8')
+		result = json.loads(ready_data)
 		print 'There are :' ,len(result), 'of group generated.'
 		import pandas as pd
 		data_frame = pd.read_json(json.dumps(result))
