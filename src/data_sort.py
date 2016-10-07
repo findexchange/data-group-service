@@ -135,6 +135,7 @@ class data_sort:
 		trigrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 3)))
 		fourgrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 4)))
 		fivegrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 5)))
+
 		data_uni = pd.DataFrame(unigrams.items(),columns=['name', 'frequency'])
 		data_bi = pd.DataFrame(bigrams.items(), columns = ['name', 'frequency'])
 		data_tri = pd.DataFrame(trigrams.items(), columns = ['name', 'frequency'])
@@ -143,6 +144,9 @@ class data_sort:
 		data_uni['name'] = data_uni['name'].apply(self.tranformations)
 		data_bi['name'] = data_bi['name'].apply(self.tranformations)
 		data_tri['name'] = data_tri['name'].apply(self.tranformations)
+		data_four['name'] = data_four['name'].apply(self.tranformations)
+		data_five['name'] = data_five['name'].apply(self.tranformations)
+
 		name_uni = data_uni.name[data_uni.frequency >= 2]
 		name_bi = data_bi.name
 		#Compare one word with two words, if contains one word replace two with one word.
@@ -152,7 +156,7 @@ class data_sort:
 			if np.any(data_bi[name_bi.str.contains(check)]['name'] != pd.Series.empty):
 				data_bi.loc[name_bi.str.contains(check),'name'] = check
 		
-		all_data_df = pd.concat([data_uni, data_bi, data_tri])
+		all_data_df = pd.concat([data_uni, data_bi, data_tri,data_four, data_five])
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
 		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
 		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
@@ -190,6 +194,3 @@ class data_sort:
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
 
-f = '../../../findex-extracted-data.json'
-test = data_sort(f)
-test.get_tagged()
