@@ -133,9 +133,13 @@ class data_sort:
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
 		bigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,2)))
 		trigrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 3)))
+		fourgrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 4)))
+		fivegrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 5)))
 		data_uni = pd.DataFrame(unigrams.items(),columns=['name', 'frequency'])
 		data_bi = pd.DataFrame(bigrams.items(), columns = ['name', 'frequency'])
 		data_tri = pd.DataFrame(trigrams.items(), columns = ['name', 'frequency'])
+		data_four = pd.DataFrame(fourgrams.items(), columns = ['name', 'frequency'])
+		data_five = pd.DataFrame(fivegrams.items(), columns = ['name', 'frequency'])
 		data_uni['name'] = data_uni['name'].apply(self.tranformations)
 		data_bi['name'] = data_bi['name'].apply(self.tranformations)
 		data_tri['name'] = data_tri['name'].apply(self.tranformations)
@@ -172,7 +176,7 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.tagging)
-		# data.applymap(self.encode_data).to_csv('results.csv') this line is for local testing 
+		data.applymap(self.encode_data).to_csv('results.csv') #this line is for local testing 
 		return data 
 
 
@@ -186,3 +190,6 @@ class data_sort:
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
 
+f = '../../../findex-extracted-data.json'
+test = data_sort(f)
+test.get_tagged()
