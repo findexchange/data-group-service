@@ -42,6 +42,8 @@ class data_sort:
 		strings = pattern2.sub('',strings).strip()
 		pattern3 = re.compile(r'\([\d]+\)')
 		strings = pattern3.sub('',strings).strip()
+		pattern4 = re.compile(r',[\s\w]+')
+		strings = pattern4.sub('',strings).strip()
 		return strings
 
 
@@ -192,8 +194,8 @@ class data_sort:
 		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
 		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
 		all_data_df.name = all_data_df.name.apply(lambda x: str(x))
-		#return keyword that has frequency larger than 2
-		return all_data_df[all_data_df['frequency'] > n].reset_index().drop(['index'], axis = 1)
+		#return keyword that has frequency larger than or equal to n
+		return all_data_df[all_data_df['frequency'] >= n].reset_index().drop(['index'], axis = 1)
 
 
 	#Tag each row with each keywords generated previous
@@ -210,8 +212,8 @@ class data_sort:
 	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.tagging)
-		#data.applymap(self.encode_data).to_csv('results.csv') #this line is for local testing 
+		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
+		#data.applymap(self.encode_data).to_csv('../../../results.csv') #this line is for local testing 
 		return data 
 
 
@@ -224,3 +226,4 @@ class data_sort:
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
+
