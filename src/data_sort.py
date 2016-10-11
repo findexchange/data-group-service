@@ -74,7 +74,7 @@ class data_sort:
 			dataframe.postal_town = dataframe['postal_town'].str.lower()
 			dataframe.postal_town = dataframe['postal_town'].apply(self.encode_data)
 			dataframe.postal_town = dataframe['postal_town'].apply(self.replace_no_char)
-			postal_town = dataframe.postal_town
+			postal_town = dataframe.postal_town.dropna()
 			unique_postal_array = np.unique(np.array(postal_town))
 			return unique_postal_array
 		else:	
