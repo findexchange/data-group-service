@@ -69,12 +69,12 @@ class data_sort:
 	#Return clean addresses for cleaning names
 	def get_clean_address(self):
 		dataframe = self.read_data()
-		if 'postal_town' in dataframe.columns:
-			dataframe.postal_town = dataframe['postal_town'].apply(lambda x : str(x))
-			dataframe.postal_town = dataframe['postal_town'].str.lower()
-			dataframe.postal_town = dataframe['postal_town'].apply(self.encode_data)
-			dataframe.postal_town = dataframe['postal_town'].apply(self.replace_no_char)
-			postal_town = dataframe.postal_town.dropna()
+		if 'town' in dataframe.columns:
+			dataframe.town = dataframe['town'].apply(lambda x : str(x))
+			dataframe.town = dataframe['town'].str.lower()
+			dataframe.town = dataframe['town'].apply(self.encode_data)
+			dataframe.town = dataframe['town'].apply(self.replace_no_char)
+			postal_town = dataframe.dropna()
 			unique_postal_array = np.unique(np.array(postal_town))
 			return unique_postal_array
 		else:	
@@ -127,7 +127,6 @@ class data_sort:
 	def tranformations(strings):
 		strings = ' '.join(strings)
 		strings = strings.replace('#','')
-		# strings = strings.replace('#','')
 		strings = strings.strip()
 		strings = str(strings)
 		return strings    
@@ -213,7 +212,6 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
-		#data.applymap(self.encode_data).to_csv('../../../results.csv') #this line is for local testing 
 		return data 
 
 
