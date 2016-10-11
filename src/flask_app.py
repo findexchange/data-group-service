@@ -15,8 +15,13 @@ def input_data():
 	import json
 	if 'data' in request.values:
 		data = request.values['data']
+
+	elif len(request.data) > 0:
+		data = request.data	
+
 	else:
 		data = json.loads(json.dumps(request.values.keys()[0]))
+
 		
 	try:
 		start_sorting = data_sort(data)
