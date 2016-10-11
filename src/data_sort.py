@@ -11,6 +11,7 @@ class data_sort:
 		self.data = data
 		self.all_data_df = self.aggreate_all()
 
+
 	def read_data(self):
 		try:
 			data = pd.read_json(self.data)
@@ -18,6 +19,7 @@ class data_sort:
 			print 'please use data format in Json'
 			data = ''
 		return data
+
 
 	#encoding for different langugages	
 	@staticmethod
@@ -29,6 +31,7 @@ class data_sort:
 		finally:
 			return strings
 
+
 	#put word in lowercase and clean any suffix	
 	@staticmethod	
 	def lower_clean_suffix(strings):
@@ -39,7 +42,10 @@ class data_sort:
 		strings = pattern2.sub('',strings).strip()
 		pattern3 = re.compile(r'\([\d]+\)')
 		strings = pattern3.sub('',strings).strip()
+		pattern4 = re.compile(r',[\s\w]+')
+		strings = pattern4.sub('',strings).strip()
 		return strings
+
 
 	#Clean non-characters		
 	@staticmethod		
@@ -52,11 +58,28 @@ class data_sort:
 		strings = pattern.sub('', strings).strip()
 		return strings	    
 
+
 	#Add begin and end mark to each name.e.g <s></s>
 	@staticmethod		
 	def add_break(strings):
-		strings = '<s>'+ strings + '</s>'
+		strings = '#' + strings + '#'
 		return strings	    
+
+
+	#Return clean addresses for cleaning names
+	def get_clean_address(self):
+		dataframe = self.read_data()
+		if 'town' in dataframe.columns:
+			dataframe.town = dataframe['town'].apply(lambda x : str(x))
+			dataframe.town = dataframe['town'].str.lower()
+			dataframe.town = dataframe['town'].apply(self.encode_data)
+			dataframe.town = dataframe['town'].apply(self.replace_no_char)
+			postal_town = dataframe.dropna()
+			unique_postal_array = np.unique(np.array(postal_town))
+			return unique_postal_array
+		else:	
+			return ''
+
 
 	#return cleaned names
 	def get_clean_names(self):
@@ -65,7 +88,7 @@ class data_sort:
 		dataframe['name'] = dataframe['name'].apply(self.lower_clean_suffix)
 		dataframe['name'] = dataframe['name'].apply(self.replace_no_char)
 		dataframe['name'] = dataframe['name'].apply(self.add_break)
-		return dataframe['name']
+		return dataframe['name'].reset_index().drop('index', axis = 1)
 
 
 	#break down all the names in to a list
@@ -78,6 +101,7 @@ class data_sort:
 					else:
 						 all_list.append(i)
 			return all_list
+
 			
 	#N-grams generator	
 	@staticmethod		
@@ -89,11 +113,11 @@ class data_sort:
 	@staticmethod	
 	def delete_nonsense(count_dict):
 		for items in count_dict.keys():
-				patn = '<s>'+'[\w]+\-'*(len(items)-1) + '[\w]+</s>'
-				i = '-'.join(items)
+				patn = '#'+'[\w]+\&'*(len(items)-1) + '[\w]+#'
+				i = '&'.join(items)
 				pattern = re.compile(patn)
 				if not pattern.match(i):
-					item = tuple(i.split('-'))
+					item = tuple(i.split('&'))
 					del count_dict[item]
 		return count_dict
 
@@ -102,8 +126,7 @@ class data_sort:
 	@staticmethod
 	def tranformations(strings):
 		strings = ' '.join(strings)
-		strings = strings.replace('<s>','')
-		strings = strings.replace('</s>','')
+		strings = strings.replace('#','')
 		strings = strings.strip()
 		strings = str(strings)
 		return strings    
@@ -128,17 +151,34 @@ class data_sort:
 	#put all together, return a dataframe with all keywords	that has frequency larger than 2
 	#They are treated as tags
 	def aggreate_all(self, n = 2):
-		name_series = self.get_clean_names()
-		one_word = self.one_word_list(name_series)
+		name_df = self.get_clean_names()
+		address_series = self.get_clean_address()
+		if len(address_series)==0: pass
+		#Delete the names containing postal adderss
+		else:
+			for i in address_series:
+				check_word = i
+				if np.any(name_df[name_df.name.str.contains(check_word)]['name'] != pd.Series.empty):
+					name_df.loc[name_df.name.str.contains(check_word), 'name'] = name_df.loc[name_df.name.str.contains(check_word), 'name'].str.replace(check_word, '')
+
+		one_word = self.one_word_list(name_df.name)
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
 		bigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,2)))
 		trigrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 3)))
+		fourgrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 4)))
+		fivegrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 5)))
+
 		data_uni = pd.DataFrame(unigrams.items(),columns=['name', 'frequency'])
 		data_bi = pd.DataFrame(bigrams.items(), columns = ['name', 'frequency'])
 		data_tri = pd.DataFrame(trigrams.items(), columns = ['name', 'frequency'])
+		data_four = pd.DataFrame(fourgrams.items(), columns = ['name', 'frequency'])
+		data_five = pd.DataFrame(fivegrams.items(), columns = ['name', 'frequency'])
 		data_uni['name'] = data_uni['name'].apply(self.tranformations)
 		data_bi['name'] = data_bi['name'].apply(self.tranformations)
 		data_tri['name'] = data_tri['name'].apply(self.tranformations)
+		data_four['name'] = data_four['name'].apply(self.tranformations)
+		data_five['name'] = data_five['name'].apply(self.tranformations)
+
 		name_uni = data_uni.name[data_uni.frequency >= 2]
 		name_bi = data_bi.name
 		#Compare one word with two words, if contains one word replace two with one word.
@@ -148,13 +188,13 @@ class data_sort:
 			if np.any(data_bi[name_bi.str.contains(check)]['name'] != pd.Series.empty):
 				data_bi.loc[name_bi.str.contains(check),'name'] = check
 		
-		all_data_df = pd.concat([data_uni, data_bi, data_tri])
+		all_data_df = pd.concat([data_uni, data_bi, data_tri,data_four, data_five])
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
 		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
 		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
 		all_data_df.name = all_data_df.name.apply(lambda x: str(x))
-		#return keyword that has frequency larger than 2
-		return all_data_df[all_data_df['frequency']>n].reset_index().drop(['index'], axis = 1)
+		#return keyword that has frequency larger than or equal to n
+		return all_data_df[all_data_df['frequency'] >= n].reset_index().drop(['index'], axis = 1)
 
 
 	#Tag each row with each keywords generated previous
@@ -171,8 +211,7 @@ class data_sort:
 	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.tagging)
-		# data.applymap(self.encode_data).to_csv('results.csv') this line is for local testing 
+		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
 		return data 
 
 
