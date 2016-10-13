@@ -74,7 +74,7 @@ class data_sort:
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
-			postal_town = dataframe.dropna()
+			postal_town = dataframe.town.dropna()
 			unique_postal_array = np.unique(np.array(postal_town))
 			return unique_postal_array
 		else:	
@@ -88,7 +88,7 @@ class data_sort:
 		dataframe['name'] = dataframe['name'].apply(self.lower_clean_suffix)
 		dataframe['name'] = dataframe['name'].apply(self.replace_no_char)
 		dataframe['name'] = dataframe['name'].apply(self.add_break)
-		return dataframe['name'].reset_index().drop('index', axis = 1)
+		return dataframe['name']
 
 
 	#break down all the names in to a list
@@ -146,22 +146,21 @@ class data_sort:
 		if len(string) == 0:
 			string = np.nan
 		return string
-
 		
 	#put all together, return a dataframe with all keywords	that has frequency larger than 2
 	#They are treated as tags
 	def aggreate_all(self, n = 2):
-		name_df = self.get_clean_names()
+		name_series = self.get_clean_names()
 		address_series = self.get_clean_address()
-		if len(address_series)==0: pass
+		if len(address_series) == 0: pass
 		#Delete the names containing postal adderss
 		else:
 			for i in address_series:
 				check_word = i
-				if np.any(name_df[name_df.name.str.contains(check_word)]['name'] != pd.Series.empty):
-					name_df.loc[name_df.name.str.contains(check_word), 'name'] = name_df.loc[name_df.name.str.contains(check_word), 'name'].str.replace(check_word, '')
+				if np.any(name_series[name_series.str.contains(check_word)] != pd.Series.empty): 
+					name_series.loc[name_series.str.contains(check_word)] = name_series.loc[name_series.str.contains(check_word)].str.replace(check_word, '')
 
-		one_word = self.one_word_list(name_df.name)
+		one_word = self.one_word_list(name_series)
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
 		bigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,2)))
 		trigrams = self.delete_nonsense(Counter(self.get_ngram(one_word, 3)))
@@ -212,6 +211,7 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
+		data.applymap(self.encode_data).to_csv('./results.csv') #this line is for local testing 
 		return data 
 
 
