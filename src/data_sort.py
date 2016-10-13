@@ -51,6 +51,7 @@ class data_sort:
 	@staticmethod		
 	def replace_no_char(strings):
 		strings = strings.replace('- ', '')
+		strings = strings.replace(' -','')
 		strings = strings.replace('&', '')
 		strings = strings.replace('(', '')
 		strings = strings.replace(')',"")
