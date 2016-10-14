@@ -75,9 +75,10 @@ class data_sort:
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
-			postal_town = dataframe.town.dropna()
-			unique_postal_array = np.unique(np.array(postal_town))
-			return unique_postal_array
+			postal_town = dataframe.town#.dropna()
+			#unique_postal_array = np.unique(np.array(postal_town))
+			# return unique_postal_array
+			return postal_town
 		else:	
 			return ''
 
@@ -153,13 +154,11 @@ class data_sort:
 	def aggreate_all(self, n = 2):
 		name_series = self.get_clean_names()
 		address_series = self.get_clean_address()
-		if len(address_series) == 0: pass
+
 		#Delete the names containing postal adderss
+		if len(address_series) == 0: pass
 		else:
-			for i in address_series:
-				check_word = i
-				if np.any(name_series[name_series.str.contains(check_word)] != pd.Series.empty): 
-					name_series.loc[name_series.str.contains(check_word)] = name_series.loc[name_series.str.contains(check_word)].str.replace(check_word, '')
+			name_series = [e.replace(k, '') for e, k in zip(name_series, address_series)]
 
 		one_word = self.one_word_list(name_series)
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
@@ -212,6 +211,7 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
+		data.applymap(self.encode_data).to_csv('../../../results.csv') #this line is for local testing 
 		return data 
 
 
@@ -224,4 +224,3 @@ class data_sort:
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
-
