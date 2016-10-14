@@ -212,7 +212,6 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
-		data.applymap(self.encode_data).to_csv('./results.csv') #this line is for local testing 
 		return data 
 
 
