@@ -75,10 +75,9 @@ class data_sort:
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
-			postal_town = dataframe.town#.dropna()
-			#unique_postal_array = np.unique(np.array(postal_town))
-			# return unique_postal_array
-			return postal_town
+			postal_town = dataframe.town.dropna()
+			unique_postal_array = np.unique(np.array(postal_town))
+			return unique_postal_array
 		else:	
 			return ''
 
@@ -154,10 +153,13 @@ class data_sort:
 	def aggreate_all(self, n = 2):
 		name_series = self.get_clean_names()
 		address_series = self.get_clean_address()
-
-		#Delete the names containing postal adderss
 		if len(address_series) == 0: pass
+		#Delete the names containing postal adderss
 		else:
+			# for i in address_series:
+			# 	check_word = i
+			# 	if np.any(name_series[name_series.str.contains(check_word)] != pd.Series.empty): 
+			# 		name_series.loc[name_series.str.contains(check_word)] = name_series.loc[name_series.str.contains(check_word)].str.replace(check_word, '')
 			name_series = [e.replace(k, '') for e, k in zip(name_series, address_series)]
 
 		one_word = self.one_word_list(name_series)
@@ -224,3 +226,4 @@ class data_sort:
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
 
+f = '../../../sample'
