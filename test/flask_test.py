@@ -41,6 +41,22 @@ class FlaskrTestCase(unittest.TestCase):
 		self.assertEqual(len(compare_with_count),0)
 
 
+	def testing_results(self):
+
+		def jac_dis(x, y):
+			setx = set(x.lower().split())
+			sety = set(y.split())
+			return float(len(setx.intersection(sety)))/float(len(setx.union(sety)))
+
+		data = self.data_sort.data_sort(self.file)
+		tagged_data = data.get_tagged()
+		tagged_data.name = tagged_data.name.apply(data.replace_no_char).apply(data.replace_no_char_on_tag)
+		if 'town' in tagged_data.columns:
+			tagged_data.town.fillna('', inplace= True)
+			tagged_data.name = [e.replace(k, '') for e, k in zip(tagged_data.name, tagged_data.town)]
+		tagged_data['similaries'] = [jac_dis(x, y) for x, y in zip(tagged_data['name'], tagged_data['tags'])]
+		self.assertTrue(tagged_data.similaries.mean() >= 0.6) 
+
 
 if __name__ == '__main__':
 	unittest.main()

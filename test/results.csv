@@ -33,11 +33,11 @@
 31,StringsRowId_31,yorkshire building society,yorkshire building society
 32,StringsRowId_32,lloyds bank,lloyds
 33,StringsRowId_33,lloyds bank,lloyds
-34,StringsRowId_34,andrews estate agents,andrews estate agents
+34,StringsRowId_34,andrews estate agents,andrews
 35,StringsRowId_35,barclays bank - dartford,barclays bank
 36,StringsRowId_36,lloyds bank,lloyds
 37,StringsRowId_37,yorkshire building society,yorkshire building society
-38,StringsRowId_38,"s akbar & co, chartered accountants","s akbar & co, chartered accountants"
+38,StringsRowId_38,"s akbar & co, chartered accountants",s akbar  co chartered accountants
 39,StringsRowId_39,lloyds bank,lloyds
 40,StringsRowId_40,chiddingstone post office,post office
 41,StringsRowId_41,andrews,andrews
@@ -55,7 +55,7 @@
 53,StringsRowId_53,ward & partners,ward partners
 54,StringsRowId_54,ward & partners,ward partners
 55,StringsRowId_55,donal lucey lawlor,donal lucey lawlor
-56,StringsRowId_56,r l vaughan & co,r l vaughan & co
+56,StringsRowId_56,r l vaughan & co,r l vaughan  co
 57,StringsRowId_57,asda,asda
 58,StringsRowId_58,lloyds bank,lloyds
 59,StringsRowId_59,knight frank sevenoaks estate agents,knight frank sevenoaks estate agents
@@ -73,7 +73,7 @@
 71,StringsRowId_71,lloyds bank,lloyds
 72,StringsRowId_72,knight frank tunbridge wells estate agents,knight frank tunbridge wells estate agents
 73,StringsRowId_73,hatten wyatt,hatten wyatt
-74,StringsRowId_74,robinson jackson eltham sales & lettings estate agents,robinson jackson eltham sales & lettings estate agents
+74,StringsRowId_74,robinson jackson eltham sales & lettings estate agents,robinson jackson eltham sales  lettings estate agents
 75,StringsRowId_75,natwest,natwest
 76,StringsRowId_76,ward & partners,ward partners
 77,StringsRowId_77,connells estate agents in east grinstead,connells estate agents
@@ -81,7 +81,7 @@
 79,StringsRowId_79,asda,asda
 80,StringsRowId_80,post office,post office
 81,StringsRowId_81,yorkshire building society,yorkshire building society
-82,StringsRowId_82,"kreston reeves, chatham office","kreston reeves, chatham office"
+82,StringsRowId_82,"kreston reeves, chatham office",kreston reeves
 83,StringsRowId_83,halifax,halifax
 84,StringsRowId_84,hamilton reiss,hamilton reiss
 85,StringsRowId_85,lloyds bank,lloyds
@@ -91,24 +91,24 @@
 89,StringsRowId_89,asda tunbridge wells superstore,asda
 90,StringsRowId_90,asda,asda
 91,StringsRowId_91,tsb bank,tsb bank
-92,StringsRowId_92,century residential sales & lettings,century residential sales & lettings
+92,StringsRowId_92,century residential sales & lettings,century residential sales  lettings
 93,StringsRowId_93,village estates,village estates
 94,StringsRowId_94,natwest,natwest
 95,StringsRowId_95,kingsleys,kingsleys
-96,StringsRowId_96,robinson jackson orpington sales & lettings estate agents,robinson jackson orpington sales & lettings estate agents
+96,StringsRowId_96,robinson jackson orpington sales & lettings estate agents,robinson jackson orpington sales  lettings estate agents
 97,StringsRowId_97,hsbc,hsbc
 98,StringsRowId_98,post office ltd,post office
-99,StringsRowId_99,friend & grant ltd,friend & grant ltd
+99,StringsRowId_99,friend & grant ltd,friend  grant ltd
 100,StringsRowId_100,mcbrides,mcbrides
 101,StringsRowId_101,humberts estate agents,humberts estate agents
 102,StringsRowId_102,kent reliance,kent reliance
-103,StringsRowId_103,tinklin springall solicitors & notary,tinklin springall solicitors & notary
+103,StringsRowId_103,tinklin springall solicitors & notary,tinklin springall solicitors  notary
 104,StringsRowId_104,money matters,money matters
 105,StringsRowId_105,santander,santander
 106,StringsRowId_106,cubitt & west,cubitt west
 107,StringsRowId_107,halifax,halifax
 108,StringsRowId_108,royal mail maidstone delivery office,royal mail
-109,StringsRowId_109,the co-op bank - chatham,the co-op bank - chatham
+109,StringsRowId_109,the co-op bank - chatham,the coop bank chatham
 110,StringsRowId_110,taxassist accountants,taxassist accountants
 111,StringsRowId_111,hsbc bank plc,hsbc
 112,StringsRowId_112,mid higham post office,post office
@@ -116,16 +116,16 @@
 114,StringsRowId_114,wood end gardens sub post office,post office
 115,StringsRowId_115,post office ltd,post office
 116,StringsRowId_116,connells estate agents in maidstone,connells estate agents
-117,StringsRowId_117,j & h accounting services,j & h accounting services
+117,StringsRowId_117,j & h accounting services,j  h accounting services
 118,StringsRowId_118,winkworth blackheath estate agents,winkworth blackheath estate agents
 119,StringsRowId_119,taxassist accountants,taxassist accountants
 120,StringsRowId_120,fidelity,fidelity
-121,StringsRowId_121,sadler davies & co,sadler davies & co
+121,StringsRowId_121,sadler davies & co,sadler davies  co
 122,StringsRowId_122,taxassist accountants,taxassist accountants
 123,StringsRowId_123,povey little,povey little
 124,StringsRowId_124,barclays bank - chatham,barclays bank
 125,StringsRowId_125,cks associates,cks associates
-126,StringsRowId_126,ben siggins estate agents - maidstone,ben siggins estate agents - maidstone
+126,StringsRowId_126,ben siggins estate agents - maidstone,ben siggins estate agents maidstone
 127,StringsRowId_127,bowles,bowles
 128,StringsRowId_128,natwest,natwest
 129,StringsRowId_129,halifax,halifax
@@ -137,13 +137,13 @@
 135,StringsRowId_135,thomas cook travel ltd,thomas cook
 136,StringsRowId_136,control accountancy services,control accountancy services
 137,StringsRowId_137,ward & partners,ward partners
-138,StringsRowId_138,portlock & co,portlock & co
+138,StringsRowId_138,portlock & co,portlock  co
 139,StringsRowId_139,downham way branch post office,post office
-140,StringsRowId_140,robinson michael & jackson gravesend sales & lettings estate agents,robinson michael & jackson gravesend sales & lettings estate agents
+140,StringsRowId_140,robinson michael & jackson gravesend sales & lettings estate agents,robinson michael  jackson gravesend sales  lettings estate agents
 141,StringsRowId_141,blue financial remortgages,blue financial remortgages
 142,StringsRowId_142,firmgrip accountancy ltd,firmgrip accountancy ltd
 143,StringsRowId_143,e t m consulting,e t m consulting
-144,StringsRowId_144,williams giles & co,williams giles & co
+144,StringsRowId_144,williams giles & co,williams giles  co
 145,StringsRowId_145,edward frazer,edward frazer
 146,StringsRowId_146,halifax,halifax
 147,StringsRowId_147,barclays bank - sevenoaks high st,barclays bank
@@ -151,14 +151,14 @@
 149,StringsRowId_149,ward & partners,ward partners
 150,StringsRowId_150,taxassist accountants,taxassist accountants
 151,StringsRowId_151,lloyds bank,lloyds
-152,StringsRowId_152,levett charles & co,levett charles & co
-153,StringsRowId_153,marryat reader & co,marryat reader & co
+152,StringsRowId_152,levett charles & co,levett charles  co
+153,StringsRowId_153,marryat reader & co,marryat reader  co
 154,StringsRowId_154,halifax,halifax
 155,StringsRowId_155,hsbc,hsbc
 156,StringsRowId_156,asda bexleyheath crook log supermarket,asda
 157,StringsRowId_157,nationwide,nationwide
 158,StringsRowId_158,oakhurst financial services ltd,oakhurst financial services ltd
-159,StringsRowId_159,robinson jackson blackfen sales & lettings estate agent,robinson jackson blackfen sales & lettings estate agent
+159,StringsRowId_159,robinson jackson blackfen sales & lettings estate agent,robinson jackson blackfen sales  lettings estate agent
 160,StringsRowId_160,bells accountants,bells accountants
 161,StringsRowId_161,hsbc,hsbc
 162,StringsRowId_162,sancto merricks wealth management,sancto merricks wealth management
@@ -166,7 +166,7 @@
 164,StringsRowId_164,bonkers money,bonkers money
 165,StringsRowId_165,abbey wood branch post office,post office
 166,StringsRowId_166,hsbc,hsbc
-167,StringsRowId_167,mortgage & more,mortgage & more
+167,StringsRowId_167,mortgage & more,mortgage  more
 168,StringsRowId_168,grassy bank garden services,grassy bank garden services
 169,StringsRowId_169,halifax,halifax
 170,StringsRowId_170,ward & partners,ward partners
@@ -175,7 +175,7 @@
 173,StringsRowId_173,halifax,halifax
 174,StringsRowId_174,penge high street sub post office,post office
 175,StringsRowId_175,lloyds bank,lloyds
-176,StringsRowId_176,osborn & company,osborn & company
+176,StringsRowId_176,osborn & company,osborn  company
 177,StringsRowId_177,lloyds bank,lloyds
 178,StringsRowId_178,v p associates,v p associates
 179,StringsRowId_179,lloyds bank,lloyds
@@ -186,7 +186,7 @@
 184,StringsRowId_184,ward & partners,ward partners
 185,StringsRowId_185,hsbc bank plc,hsbc
 186,StringsRowId_186,edwards chartered accountants,edwards chartered accountants
-187,StringsRowId_187,robinson jackson dartford sales & lettings estate agents,robinson jackson dartford sales & lettings estate agents
+187,StringsRowId_187,robinson jackson dartford sales & lettings estate agents,robinson jackson dartford sales  lettings estate agents
 188,StringsRowId_188,thomas cook travel ltd,thomas cook
 189,StringsRowId_189,barming post office and off licence/convenience store/news agent,post office
 190,StringsRowId_190,creaseys group limited,creaseys group limited
@@ -249,7 +249,7 @@
 247,StringsRowId_247,connells estate agents,connells estate agents
 248,StringsRowId_248,nationwide,nationwide
 249,StringsRowId_249,lloyds bank,lloyds
-250,StringsRowId_250,"asc finance for business, hertfordshire","asc finance for business, hertfordshire"
+250,StringsRowId_250,"asc finance for business, hertfordshire",asc finance for business
 251,StringsRowId_251,connells estate agents in harrow,connells estate agents
 252,StringsRowId_252,nationwide,nationwide
 253,StringsRowId_253,savills harpenden,savills harpenden
@@ -257,7 +257,7 @@
 255,StringsRowId_255,nationwide,nationwide
 256,StringsRowId_256,connells estate agents,connells estate agents
 257,StringsRowId_257,nationwide,nationwide
-258,StringsRowId_258,andrews estate agents,andrews estate agents
+258,StringsRowId_258,andrews estate agents,andrews
 259,StringsRowId_259,nationwide,nationwide
 260,StringsRowId_260,lloyds bank,lloyds
 261,StringsRowId_261,connells estate agents,connells estate agents
@@ -311,10 +311,10 @@
 309,StringsRowId_309,tsb bank,tsb bank
 310,StringsRowId_310,post office,post office
 311,StringsRowId_311,princes parade post office,post office
-312,StringsRowId_312,harrods estates - knightsbridge office,harrods estates - knightsbridge office
+312,StringsRowId_312,harrods estates - knightsbridge office,harrods estates
 313,StringsRowId_313,western union,western union
 314,StringsRowId_314,lloyds bank,lloyds
-315,StringsRowId_315,david conway & co,david conway & co
+315,StringsRowId_315,david conway & co,david conway  co
 316,StringsRowId_316,nationwide,nationwide
 317,StringsRowId_317,davidson gold,davidson gold
 318,StringsRowId_318,skipton building society - chesham,skipton building society
@@ -342,17 +342,17 @@
 340,StringsRowId_340,marshall vizard,marshall vizard
 341,StringsRowId_341,cohen arnold,cohen arnold
 342,StringsRowId_342,lloyds bank,lloyds
-343,StringsRowId_343,harrods estates - mayfair office,harrods estates - mayfair office
+343,StringsRowId_343,harrods estates - mayfair office,harrods estates
 344,StringsRowId_344,nationwide,nationwide
 345,StringsRowId_345,j p l,j p l
 346,StringsRowId_346,halifax,halifax
 347,StringsRowId_347,park estates,park estates
-348,StringsRowId_348,ellis & co wembley central estate and lettings agents,ellis & co wembley central estate and lettings agents
+348,StringsRowId_348,ellis & co wembley central estate and lettings agents,ellis  co wembley central estate and lettings agents
 349,StringsRowId_349,luton trade centre ltd,luton trade centre ltd
 350,StringsRowId_350,barclays bank - abbots langley,barclays bank
 351,StringsRowId_351,household estate agents,household estate agents
 352,StringsRowId_352,post office,post office
-353,StringsRowId_353,goldschmidt & howland,goldschmidt & howland
+353,StringsRowId_353,goldschmidt & howland,goldschmidt  howland
 354,StringsRowId_354,lloyds bank,lloyds
 355,StringsRowId_355,towers watson ltd,towers watson ltd
 356,StringsRowId_356,royal mail parcels - acton centre,royal mail
@@ -374,8 +374,8 @@
 372,StringsRowId_372,lloyds bank,lloyds
 373,StringsRowId_373,barclays bank - cheshunt,barclays bank
 374,StringsRowId_374,taxassist accountants,taxassist accountants
-375,StringsRowId_375,saha n & co,saha n & co
-376,StringsRowId_376,uk auction list.com,uk auction list.com
+375,StringsRowId_375,saha n & co,saha n  co
+376,StringsRowId_376,uk auction list.com,uk auction listcom
 377,StringsRowId_377,strand-on-the-green sub post office,post office
 378,StringsRowId_378,lloyds bank,lloyds
 379,StringsRowId_379,bush hill park sub post office,post office
@@ -434,31 +434,31 @@
 432,StringsRowId_432,tesco - victoria metro,tesco
 433,StringsRowId_433,post office - marchmont street,post office
 434,StringsRowId_434,post office - eccleston street,post office
-435,StringsRowId_435,sparrows food & wine,sparrows food & wine
+435,StringsRowId_435,sparrows food & wine,sparrows food  wine
 436,StringsRowId_436,post office - marylebone,post office
 437,StringsRowId_437,magnum news,magnum news
 438,StringsRowId_438,universal fx ltd,universal fx ltd
 439,StringsRowId_439,farmers newsagents bella news,farmers newsagents bella news
-440,StringsRowId_440,london express - #lgb0190,london express - #lgb0190
+440,StringsRowId_440,london express - #lgb0190,london express
 441,StringsRowId_441,post office - farringdon road,post office
 442,StringsRowId_442,post office - southwark,post office
 443,StringsRowId_443,gilmores 4 limited,gilmores 4 limited
 444,StringsRowId_444,post office - vauxhall street,post office
-445,StringsRowId_445,jamaica national e&c,jamaica national e&c
+445,StringsRowId_445,jamaica national e&c,jamaica national ec
 446,StringsRowId_446,post office - mount pleasant,post office
 447,StringsRowId_447,thomas cook - marble arch,thomas cook
 448,StringsRowId_448,moneycorp - #008k - knightsbridge tube,moneycorp
 449,StringsRowId_449,moneycorp - #004 - sloane street,moneycorp
 450,StringsRowId_450,moneycorp,moneycorp
 451,StringsRowId_451,moneycorp - corporate account,moneycorp
-452,StringsRowId_452,inara transfers ltd - elephant & castle,inara transfers ltd - elephant & castle
+452,StringsRowId_452,inara transfers ltd - elephant & castle,inara transfers ltd elephant  castle
 453,StringsRowId_453,tesco - elephant and castle metro,tesco
 454,StringsRowId_454,moneycorp - #008 - knightsbridge,moneycorp
 455,StringsRowId_455,metro trends ltd,metro trends ltd
 456,StringsRowId_456,post office - lupus street,post office
 457,StringsRowId_457,tesco - kennington vauxhall superstore,tesco
 458,StringsRowId_458,wine masters,wine masters
-459,StringsRowId_459,inara transfers ltd - strata,inara transfers ltd - strata
+459,StringsRowId_459,inara transfers ltd - strata,inara transfers ltd strata
 460,StringsRowId_460,post office - knightsbridge,post office
 461,StringsRowId_461,classic news,classic news
 462,StringsRowId_462,continenatl link,continenatl link
@@ -467,8 +467,8 @@
 465,StringsRowId_465,post office - baker street,post office
 466,StringsRowId_466,tesco - edgware road metro,tesco
 467,StringsRowId_467,post office - london bridge,post office
-468,StringsRowId_468,worldpay - united kingdom,worldpay - united kingdom
-469,StringsRowId_469,computer & mobile center - #lgb0761,computer & mobile center - #lgb0761
+468,StringsRowId_468,worldpay - united kingdom,worldpay united kingdom
+469,StringsRowId_469,computer & mobile center - #lgb0761,computer  mobile center
 470,StringsRowId_470,post office - albany street,post office
 471,StringsRowId_471,post office - amos grove,post office
 472,StringsRowId_472,post office - kennington park,post office
@@ -482,7 +482,7 @@
 480,StringsRowId_480,post office - walworth road,post office
 481,StringsRowId_481,post office - the city of london,post office
 482,StringsRowId_482,speedy cash - walworth,speedy cash
-483,StringsRowId_483,market news - #lgb0865,market news - #lgb0865
+483,StringsRowId_483,market news - #lgb0865,market news
 484,StringsRowId_484,post office - chelsea royal hospital,post office
 485,StringsRowId_485,daily fresh supermarket,daily fresh supermarket
 486,StringsRowId_486,bjinfinity services,bjinfinity services
@@ -510,11 +510,11 @@
 508,StringsRowId_508,post office - london - wyndham road,post office
 509,StringsRowId_509,post office - caledonian road (320),post office
 510,StringsRowId_510,post office - murray grove,post office
-511,StringsRowId_511,aljay ventures - #lgb0924,aljay ventures - #lgb0924
+511,StringsRowId_511,aljay ventures - #lgb0924,aljay ventures
 512,StringsRowId_512,addis,addis
 513,StringsRowId_513,post office - old kent road,post office
 514,StringsRowId_514,post office - eastern,post office
-515,StringsRowId_515,phone clinic - #lgb1132,phone clinic - #lgb1132
+515,StringsRowId_515,phone clinic - #lgb1132,phone clinic
 516,StringsRowId_516,tesco - battersea metro,tesco
 517,StringsRowId_517,prima and company,prima and company
 518,StringsRowId_518,terrys news,terrys news
@@ -531,18 +531,18 @@
 529,StringsRowId_529,post office - st johns wood,post office
 530,StringsRowId_530,metro remittance,metro remittance
 531,StringsRowId_531,post office - battersea bridge road,post office
-532,StringsRowId_532,money exchange shop - #lgb0860,money exchange shop - #lgb0860
+532,StringsRowId_532,money exchange shop - #lgb0860,money exchange shop
 533,StringsRowId_533,tesco - whitechapel fieldgate,tesco
 534,StringsRowId_534,post office - southampton way,post office
 535,StringsRowId_535,post office - regents park road,post office
-536,StringsRowId_536,stanley james jewellery ltd - #lgb0267,stanley james jewellery ltd - #lgb0267
+536,StringsRowId_536,stanley james jewellery ltd - #lgb0267,stanley james jewellery ltd
 537,StringsRowId_537,dhigs,dhigs
 538,StringsRowId_538,post office - camberwell green,post office
 539,StringsRowId_539,post office - essex road 238,post office
 540,StringsRowId_540,tesco - london bermndsy metro,tesco
 541,StringsRowId_541,post office - fulham road,post office
 542,StringsRowId_542,post office - jamaica road,post office
-543,StringsRowId_543,shree ji news - #lgb1146,shree ji news - #lgb1146
+543,StringsRowId_543,shree ji news - #lgb1146,shree ji news
 544,StringsRowId_544,xlj ltd,xlj ltd
 545,StringsRowId_545,post office - kensington church street,post office
 546,StringsRowId_546,post office - hackney road,post office
@@ -551,7 +551,7 @@
 549,StringsRowId_549,post office - brecknock road,post office
 550,StringsRowId_550,mail room,mail room
 551,StringsRowId_551,speedy cash - brixton,speedy cash
-552,StringsRowId_552,currencies bureau - #lgb0655,currencies bureau - #lgb0655
+552,StringsRowId_552,currencies bureau - #lgb0655,currencies bureau
 553,StringsRowId_553,post office - southwark park road,post office
 554,StringsRowId_554,yaa asantewa tropicals,yaa asantewa tropicals
 555,StringsRowId_555,post office - cedars,post office
@@ -580,7 +580,7 @@
 578,StringsRowId_578,granada cars,granada cars
 579,StringsRowId_579,rainbow direct,rainbow direct
 580,StringsRowId_580,kingsland chemist,kingsland chemist
-581,StringsRowId_581,laroby uk ltd - #lgb0677,laroby uk ltd - #lgb0677
+581,StringsRowId_581,laroby uk ltd - #lgb0677,laroby uk ltd
 582,StringsRowId_582,post office - kingsland road,post office
 583,StringsRowId_583,post office - grosvenor avenue,post office
 584,StringsRowId_584,post office - holloway,post office
@@ -602,17 +602,17 @@
 600,StringsRowId_600,post office - london fields,post office
 601,StringsRowId_601,centre supermarket,centre supermarket
 602,StringsRowId_602,holland park newsagents,holland park newsagents
-603,StringsRowId_603,tara mobile - #lgb1021,tara mobile - #lgb1021
+603,StringsRowId_603,tara mobile - #lgb1021,tara mobile
 604,StringsRowId_604,cash counts,cash counts
 605,StringsRowId_605,hiddo internet cafe,hiddo internet cafe
 606,StringsRowId_606,the gold centre,the gold centre
-607,StringsRowId_607,riz repair centre - #lgb0935,riz repair centre - #lgb0935
+607,StringsRowId_607,riz repair centre - #lgb0935,riz repair centre
 608,StringsRowId_608,thomas cook - surrey quays,thomas cook
 609,StringsRowId_609,post office - fulham,post office
 610,StringsRowId_610,post office - ladbroke grove,post office
 611,StringsRowId_611,2 stars,2 stars
 612,StringsRowId_612,speedy cash - dalston,speedy cash
-613,StringsRowId_613,blossoms - #lgb0958,blossoms - #lgb0958
+613,StringsRowId_613,blossoms - #lgb0958,blossoms
 614,StringsRowId_614,post office - lower road rotherhithe,post office
 615,StringsRowId_615,post office - hazlebury road,post office
 616,StringsRowId_616,post office - crossthwaite avenue,post office
@@ -622,15 +622,15 @@
 620,StringsRowId_620,post office - portobello road,post office
 621,StringsRowId_621,post office - kilburn,post office
 622,StringsRowId_622,mitka nails,mitka nails
-623,StringsRowId_623,n london net ltd - #lgb0278,n london net ltd - #lgb0278
+623,StringsRowId_623,n london net ltd - #lgb0278,n london net ltd
 624,StringsRowId_624,post office - kingsland high street,post office
 625,StringsRowId_625,post office - olympia,post office
 626,StringsRowId_626,fritzo fashion,fritzo fashion
 627,StringsRowId_627,post office - green lanes(137),post office
-628,StringsRowId_628,cybernet - g,cybernet - g
+628,StringsRowId_628,cybernet - g,cybernet g
 629,StringsRowId_629,bfc exchange ltd - peckham,bfc exchange ltd
 630,StringsRowId_630,roman road news,roman road news
-631,StringsRowId_631,new tech solutions - #lgb0953,new tech solutions - #lgb0953
+631,StringsRowId_631,new tech solutions - #lgb0953,new tech solutions
 632,StringsRowId_632,ishshah mini mart,ishshah mini mart
 633,StringsRowId_633,post office - dawes road,post office
 634,StringsRowId_634,post office - rye lane,post office
@@ -649,31 +649,31 @@
 647,StringsRowId_647,speedy cash - kilburn,speedy cash
 648,StringsRowId_648,bluedots computer and multimedia,bluedots computer and multimedia
 649,StringsRowId_649,post office - salusbury road,post office
-650,StringsRowId_650,half moon food & wine,half moon food & wine
+650,StringsRowId_650,half moon food & wine,half moon food  wine
 651,StringsRowId_651,post office - hampstead,post office
 652,StringsRowId_652,post office - harringay,post office
 653,StringsRowId_653,speedy cash - hammersmith,speedy cash
-654,StringsRowId_654,just cash on - #lgb1004,just cash on - #lgb1004
+654,StringsRowId_654,just cash on - #lgb1004,just cash on
 655,StringsRowId_655,post office - elm park,post office
 656,StringsRowId_656,post office - clapham park,post office
 657,StringsRowId_657,post office - herne hill,post office
-658,StringsRowId_658,macan link - #lgb0774,macan link - #lgb0774
+658,StringsRowId_658,macan link - #lgb0774,macan link
 659,StringsRowId_659,post office - east dulwich,post office
 660,StringsRowId_660,post office - fulham,post office
 661,StringsRowId_661,post office - bethnal green,post office
-662,StringsRowId_662,jj news - #lgb0986,jj news - #lgb0986
+662,StringsRowId_662,jj news - #lgb0986,jj news
 663,StringsRowId_663,post office - hoxton,post office
 664,StringsRowId_664,post office - cambridge heath,post office
 665,StringsRowId_665,post office - stoke newington,post office
 666,StringsRowId_666,post office - stepney,post office
-667,StringsRowId_667,whistle & flute,whistle & flute
+667,StringsRowId_667,whistle & flute,whistle  flute
 668,StringsRowId_668,post office - salmon lane,post office
 669,StringsRowId_669,post office - new kings road,post office
 670,StringsRowId_670,vincent williams ltd,vincent williams ltd
 671,StringsRowId_671,post office - victoria park,post office
 672,StringsRowId_672,topak ltd,topak ltd
 673,StringsRowId_673,debenhams - westfield shopping centre,debenhams
-674,StringsRowId_674,omax - #lgb1191,omax - #lgb1191
+674,StringsRowId_674,omax - #lgb1191,omax
 675,StringsRowId_675,snd recruitment ltd,snd recruitment ltd
 676,StringsRowId_676,krishen news,krishen news
 677,StringsRowId_677,post office - shepherds bush road,post office
@@ -685,7 +685,7 @@
 683,StringsRowId_683,intel express worldwide money transfer 3,intel express worldwide money transfer 3
 684,StringsRowId_684,masumins,masumins
 685,StringsRowId_685,tesco - hammersmith superstore,tesco
-686,StringsRowId_686,hajji communication ltd - #lgb0039,hajji communication ltd - #lgb0039
+686,StringsRowId_686,hajji communication ltd - #lgb0039,hajji communication ltd
 687,StringsRowId_687,tesco - hackney superstore,tesco
 688,StringsRowId_688,tesco - hammersmith metro,tesco
 689,StringsRowId_689,tesco - hackney metro,tesco
@@ -708,12 +708,12 @@
 706,StringsRowId_706,post office - stroud green road,post office
 707,StringsRowId_707,tesco - stroud green metro,tesco
 708,StringsRowId_708,post office - media village,post office
-709,StringsRowId_709,iso mia - #lgb0612,iso mia - #lgb0612
+709,StringsRowId_709,iso mia - #lgb0612,iso mia
 710,StringsRowId_710,post office - kensal rise,post office
 711,StringsRowId_711,post office - mill lane,post office
-712,StringsRowId_712,zahra food & wine,zahra food & wine
+712,StringsRowId_712,zahra food & wine,zahra food  wine
 713,StringsRowId_713,connollys,connollys
-714,StringsRowId_714,unitech exchange - #lgb0602,unitech exchange - #lgb0602
+714,StringsRowId_714,unitech exchange - #lgb0602,unitech exchange
 715,StringsRowId_715,post office - evelyn street (301),post office
 716,StringsRowId_716,post office - cavendish road,post office
 717,StringsRowId_717,jamaica national balham,jamaica national balham
@@ -725,10 +725,10 @@
 723,StringsRowId_723,tesco - bromley by bow superstore,tesco
 724,StringsRowId_724,tesco - bow metro,tesco
 725,StringsRowId_725,post office - streatham hill,post office
-726,StringsRowId_726,jem & t consult ltd,jem & t consult ltd
+726,StringsRowId_726,jem & t consult ltd,jem  t consult ltd
 727,StringsRowId_727,post office - canary wharf,post office
 728,StringsRowId_728,clapton internet,clapton internet
-729,StringsRowId_729,s&m news,s&m news
+729,StringsRowId_729,s&m news,sm news
 730,StringsRowId_730,post office - tulse hill,post office
 731,StringsRowId_731,post office - maida hill,post office
 732,StringsRowId_732,post office - lordship lane,post office
@@ -760,16 +760,16 @@
 758,StringsRowId_758,post office - merton road,post office
 759,StringsRowId_759,adarshi pharmacy,adarshi pharmacy
 760,StringsRowId_760,broadway jewellers,broadway jewellers
-761,StringsRowId_761,webnet.com,webnet.com
+761,StringsRowId_761,webnet.com,webnetcom
 762,StringsRowId_762,post office - putney,post office
 763,StringsRowId_763,post office - leigham vale,post office
 764,StringsRowId_764,post office - upper tooting,post office
 765,StringsRowId_765,post office - rushmore road,post office
 766,StringsRowId_766,post office - crouch end,post office
-767,StringsRowId_767,cash ur items - #lgb1271,cash ur items - #lgb1271
-768,StringsRowId_768,rose internet cafe - #lgb0850,rose internet cafe - #lgb0850
+767,StringsRowId_767,cash ur items - #lgb1271,cash ur items
+768,StringsRowId_768,rose internet cafe - #lgb0850,rose internet cafe
 769,StringsRowId_769,post office - stamford brook,post office
-770,StringsRowId_770,lxm (london express movers),lxm (london express movers)
+770,StringsRowId_770,lxm (london express movers),lxm london express movers
 771,StringsRowId_771,post office - crofton park,post office
 772,StringsRowId_772,post office - brockley road (185),post office
 773,StringsRowId_773,post office - streatham,post office
@@ -778,16 +778,16 @@
 776,StringsRowId_776,post office - stamford hill,post office
 777,StringsRowId_777,post office - west norwood,post office
 778,StringsRowId_778,post office - seven sisters road,post office
-779,StringsRowId_779,docklands food & wine,docklands food & wine
+779,StringsRowId_779,docklands food & wine,docklands food  wine
 780,StringsRowId_780,post office - church road,post office
 781,StringsRowId_781,post office - golders green,post office
 782,StringsRowId_782,post office - isle of dogs,post office
-783,StringsRowId_783,sk food and wine - #lgb0932,sk food and wine - #lgb0932
-784,StringsRowId_784,original sole trader - #lgb1013,original sole trader - #lgb1013
+783,StringsRowId_783,sk food and wine - #lgb0932,sk food and wine
+784,StringsRowId_784,original sole trader - #lgb1013,original sole trader
 785,StringsRowId_785,post office - greenwich,post office
 786,StringsRowId_786,duepans services,duepans services
 787,StringsRowId_787,kenron services,kenron services
-788,StringsRowId_788,mahnisa news - #lgb0724,mahnisa news - #lgb0724
+788,StringsRowId_788,mahnisa news - #lgb0724,mahnisa news
 789,StringsRowId_789,top communication,top communication
 790,StringsRowId_790,first exchange,first exchange
 791,StringsRowId_791,post office - east acton,post office
@@ -798,11 +798,11 @@
 796,StringsRowId_796,hidayah travel group ltd,hidayah travel group ltd
 797,StringsRowId_797,post office - southfields,post office
 798,StringsRowId_798,post office - hornsey,post office
-799,StringsRowId_799,travel house - #lgb0426,travel house - #lgb0426
-800,StringsRowId_800,caribbean shipping services ltd - #1,caribbean shipping services ltd - #1
+799,StringsRowId_799,travel house - #lgb0426,travel house
+800,StringsRowId_800,caribbean shipping services ltd - #1,caribbean shipping services ltd
 801,StringsRowId_801,post office - upper richmond road 355,post office
 802,StringsRowId_802,post office - forest hill,post office
-803,StringsRowId_803,newsfare - #lgb0863,newsfare - #lgb0863
+803,StringsRowId_803,newsfare - #lgb0863,newsfare
 804,StringsRowId_804,post office - seeley drive,post office
 805,StringsRowId_805,tesco - streatham extra,tesco
 806,StringsRowId_806,tesco - lewisham superstore,tesco
@@ -810,22 +810,22 @@
 808,StringsRowId_808,johnson cosmetics,johnson cosmetics
 809,StringsRowId_809,millimartins private limited,millimartins private limited
 810,StringsRowId_810,post office - turnpike lane,post office
-811,StringsRowId_811,t. forbes prints,t. forbes prints
+811,StringsRowId_811,t. forbes prints,t forbes prints
 812,StringsRowId_812,post office - mitcham lane (116),post office
 813,StringsRowId_813,post office - east finchley,post office
 814,StringsRowId_814,rajs convenience store,rajs convenience store
 815,StringsRowId_815,post office - west green road,post office
 816,StringsRowId_816,post office - ladywell road,post office
-817,StringsRowId_817,taj traders - #lgb1283,taj traders - #lgb1283
-818,StringsRowId_818,body music - #lgb1001,body music - #lgb1001
+817,StringsRowId_817,taj traders - #lgb1283,taj traders
+818,StringsRowId_818,body music - #lgb1001,body music
 819,StringsRowId_819,post office - craven park,post office
 820,StringsRowId_820,jamaica national hornsey,jamaica national hornsey
 821,StringsRowId_821,post office - wimbledon park,post office
-822,StringsRowId_822,pcrg - #lgb0611,pcrg - #lgb0611
+822,StringsRowId_822,pcrg - #lgb0611,pcrg
 823,StringsRowId_823,venus news,venus news
 824,StringsRowId_824,post office - craven park,post office
-825,StringsRowId_825,fortis green mini market - #lgb1023,fortis green mini market - #lgb1023
-826,StringsRowId_826,airport services - #lgb0811,airport services - #lgb0811
+825,StringsRowId_825,fortis green mini market - #lgb1023,fortis green mini market
+826,StringsRowId_826,airport services - #lgb0811,airport services
 827,StringsRowId_827,tesco - south tottenham superstore,tesco
 828,StringsRowId_828,post office - manor road,post office
 829,StringsRowId_829,post office - lewisham,post office
@@ -840,30 +840,30 @@
 838,StringsRowId_838,post office - oxgate court,post office
 839,StringsRowId_839,post office - church road,post office
 840,StringsRowId_840,post office - lewisham high street,post office
-841,StringsRowId_841,athanas associates - #lgb0925,athanas associates - #lgb0925
+841,StringsRowId_841,athanas associates - #lgb0925,athanas associates
 842,StringsRowId_842,post office - amen corner,post office
 843,StringsRowId_843,post office - stanstead road(295),post office
 844,StringsRowId_844,log's concept ltd,log's concept ltd
 845,StringsRowId_845,bfc exchange ltd - srtatford,bfc exchange ltd
 846,StringsRowId_846,star newsagents,star newsagents
 847,StringsRowId_847,post office - horn lane,post office
-848,StringsRowId_848,ur travel 4u ltd - #lgb0816,ur travel 4u ltd - #lgb0816
+848,StringsRowId_848,ur travel 4u ltd - #lgb0816,ur travel 4u ltd
 849,StringsRowId_849,kaylinks,kaylinks
 850,StringsRowId_850,exclusive boutique,exclusive boutique
 851,StringsRowId_851,konti news,konti news
 852,StringsRowId_852,thomas cook - london stratford,thomas cook
-853,StringsRowId_853,harmit mini market - #lgb0750,harmit mini market - #lgb0750
-854,StringsRowId_854,24/7 shipping limited - #lgb0644,24/7 shipping limited - #lgb0644
+853,StringsRowId_853,harmit mini market - #lgb0750,harmit mini market
+854,StringsRowId_854,24/7 shipping limited - #lgb0644,24/7 shipping limited
 855,StringsRowId_855,post office - inner park road,post office
 856,StringsRowId_856,srg london ltd,srg london ltd
 857,StringsRowId_857,post office - chiswick,post office
-858,StringsRowId_858,mail boxes etc - #lgb1227,mail boxes etc - #lgb1227
+858,StringsRowId_858,mail boxes etc - #lgb1227,mail boxes etc
 859,StringsRowId_859,post office - greyhound lane,post office
 860,StringsRowId_860,tesco - brent cross hendon way superstor,tesco
 861,StringsRowId_861,post office - princes parade,post office
 862,StringsRowId_862,post office - park royal,post office
 863,StringsRowId_863,post office - the vale,post office
-864,StringsRowId_864,sky moon travel - #lgb1039,sky moon travel - #lgb1039
+864,StringsRowId_864,sky moon travel - #lgb1039,sky moon travel
 865,StringsRowId_865,post office - roehampton high street 35,post office
 866,StringsRowId_866,post office - barking road (774),post office
 867,StringsRowId_867,dominion christian bookshop,dominion christian bookshop
@@ -882,9 +882,9 @@
 880,StringsRowId_880,lcd company group ltd,lcd company group ltd
 881,StringsRowId_881,post office - leyton,post office
 882,StringsRowId_882,post office - haydons road,post office
-883,StringsRowId_883,j & m general store,j & m general store
+883,StringsRowId_883,j & m general store,j  m general store
 884,StringsRowId_884,post office - south woodford,post office
-885,StringsRowId_885,hi-tech house - #lgb1076,hi-tech house - #lgb1076
+885,StringsRowId_885,hi-tech house - #lgb1076,hitech house
 886,StringsRowId_886,post office - temple fortune,post office
 887,StringsRowId_887,post office - grove park,post office
 888,StringsRowId_888,post office - leyton high road 244,post office
@@ -897,12 +897,12 @@
 895,StringsRowId_895,news n booze,news n booze
 896,StringsRowId_896,leopold news,leopold news
 897,StringsRowId_897,post office - mortlake high street,post office
-898,StringsRowId_898,am store - #lgb0729,am store - #lgb0729
+898,StringsRowId_898,am store - #lgb0729,am store
 899,StringsRowId_899,post office - plaistow road,post office
 900,StringsRowId_900,post office - brent park,post office
 901,StringsRowId_901,tesco - brent park - wembley,tesco
 902,StringsRowId_902,wine international,wine international
-903,StringsRowId_903,interpost global - #lgb1085,interpost global - #lgb1085
+903,StringsRowId_903,interpost global - #lgb1085,interpost global
 904,StringsRowId_904,post office - plaistow,post office
 905,StringsRowId_905,post office - canning town,post office
 906,StringsRowId_906,post office - bruce grove,post office
@@ -914,12 +914,12 @@
 912,StringsRowId_912,post office - norwood,post office
 913,StringsRowId_913,post office - lordship lane,post office
 914,StringsRowId_914,post office - sydenham,post office
-915,StringsRowId_915,u - phone limited,u - phone limited
+915,StringsRowId_915,u - phone limited,u phone limited
 916,StringsRowId_916,tiger76 limitd,tiger76 limitd
 917,StringsRowId_917,post office - merton,post office
 918,StringsRowId_918,post office - neasden,post office
 919,StringsRowId_919,v j minimarket,v j minimarket
-920,StringsRowId_920,mailboxes etc - #lgb1049,mailboxes etc - #lgb1049
+920,StringsRowId_920,mailboxes etc - #lgb1049,mailboxes etc
 921,StringsRowId_921,proclaim enterprises,proclaim enterprises
 922,StringsRowId_922,sydenham internet cafe,sydenham internet cafe
 923,StringsRowId_923,post office - romford road 667,post office
@@ -935,13 +935,13 @@
 933,StringsRowId_933,post office - westcombe hill,post office
 934,StringsRowId_934,wumak convenience,wumak convenience
 935,StringsRowId_935,post office - wanstead,post office
-936,StringsRowId_936,s m food & wine,s m food & wine
+936,StringsRowId_936,s m food & wine,s m food  wine
 937,StringsRowId_937,snooks newsagents,snooks newsagents
 938,StringsRowId_938,post office - terrace road,post office
 939,StringsRowId_939,easy zone,easy zone
-940,StringsRowId_940,10p street digital centre - #lgb0280,10p street digital centre - #lgb0280
+940,StringsRowId_940,10p street digital centre - #lgb0280,10p street digital centre
 941,StringsRowId_941,post office - strand on the green,post office
-942,StringsRowId_942,ss money transfer & travel,ss money transfer & travel
+942,StringsRowId_942,ss money transfer & travel,ss money transfer  travel
 943,StringsRowId_943,post office - the hyde,post office
 944,StringsRowId_944,post office - hendon,post office
 945,StringsRowId_945,debenhams - wimbledon,debenhams
@@ -962,7 +962,7 @@
 960,StringsRowId_960,post office - north finchley,post office
 961,StringsRowId_961,one stop,one stop
 962,StringsRowId_962,union groceries,union groceries
-963,StringsRowId_963,vs food & wine,vs food & wine
+963,StringsRowId_963,vs food & wine,vs food  wine
 964,StringsRowId_964,post office - finchley,post office
 965,StringsRowId_965,bfc exchange ltd - walthamstow,bfc exchange ltd
 966,StringsRowId_966,post office - brownlow road,post office
@@ -973,8 +973,8 @@
 971,StringsRowId_971,abm uk,abm uk
 972,StringsRowId_972,post office - lee green,post office
 973,StringsRowId_973,best food store,best food store
-974,StringsRowId_974,net time - #lgb0983,net time - #lgb0983
-975,StringsRowId_975,galz & guyz,galz & guyz
+974,StringsRowId_974,net time - #lgb0983,net time
+975,StringsRowId_975,galz & guyz,galz  guyz
 976,StringsRowId_976,hakeem rizvi food mart,hakeem rizvi food mart
 977,StringsRowId_977,noble exchange int ltd,noble exchange
 978,StringsRowId_978,post office - great cambridge road,post office
@@ -984,26 +984,26 @@
 982,StringsRowId_982,post office - kingston road,post office
 983,StringsRowId_983,post office - high road 358,post office
 984,StringsRowId_984,print connections,print connections
-985,StringsRowId_985,synergy studios (forest gate),synergy studios (forest gate)
+985,StringsRowId_985,synergy studios (forest gate),synergy studios forest gate
 986,StringsRowId_986,post office - penge,post office
 987,StringsRowId_987,perrier wines,perrier wines
 988,StringsRowId_988,post office - norbury,post office
 989,StringsRowId_989,xray africargo,xray africargo
 990,StringsRowId_990,post office - kew garden,post office
-991,StringsRowId_991,same day snaps (wh smith local),same day snaps (wh smith local)
+991,StringsRowId_991,same day snaps (wh smith local),same day snaps wh smith local
 992,StringsRowId_992,post office - northborough road,post office
-993,StringsRowId_993,ace link services - #lgb1022,ace link services - #lgb1022
+993,StringsRowId_993,ace link services - #lgb1022,ace link services
 994,StringsRowId_994,post office - james lane,post office
 995,StringsRowId_995,post office - forest gate,post office
-996,StringsRowId_996,kauri news - #lgb0982,kauri news - #lgb0982
+996,StringsRowId_996,kauri news - #lgb0982,kauri news
 997,StringsRowId_997,blades barbers,blades barbers
 998,StringsRowId_998,post office - torridon road,post office
-999,StringsRowId_999,efem jewellers - #lgb1099,efem jewellers - #lgb1099
+999,StringsRowId_999,efem jewellers - #lgb1099,efem jewellers
 1000,StringsRowId_1000,barnet travel,barnet travel
 1001,StringsRowId_1001,tesco - finchley superstore,tesco
 1002,StringsRowId_1002,chivic computer training and internet ca,chivic computer training and internet ca
 1003,StringsRowId_1003,post office - hanger lane,post office
-1004,StringsRowId_1004,al rahma internet cafe' - #lgb0789,al rahma internet cafe' - #lgb0789
+1004,StringsRowId_1004,al rahma internet cafe' - #lgb0789,al rahma internet cafe'
 1005,StringsRowId_1005,post office - park lane,post office
 1006,StringsRowId_1006,tesco - leytonstone superstore,tesco
 1007,StringsRowId_1007,pravalia casa buna,pravalia casa buna
@@ -1014,10 +1014,10 @@
 1012,StringsRowId_1012,habari newsagents,habari newsagents
 1013,StringsRowId_1013,post office - kidbrooke parade,post office
 1014,StringsRowId_1014,tesco - upton park metro,tesco
-1015,StringsRowId_1015,red internet cafe - #lgb0719,red internet cafe - #lgb0719
+1015,StringsRowId_1015,red internet cafe - #lgb0719,red internet cafe
 1016,StringsRowId_1016,worldwide exchange ltd,worldwide exchange ltd
 1017,StringsRowId_1017,post office - higham hill,post office
-1018,StringsRowId_1018,upton food & wine,upton food & wine
+1018,StringsRowId_1018,upton food & wine,upton food  wine
 1019,StringsRowId_1019,bfc exchange ltd - upton park,bfc exchange ltd
 1020,StringsRowId_1020,mr and mrs cafe,mr and mrs cafe
 1021,StringsRowId_1021,alico,alico
@@ -1030,7 +1030,7 @@
 1028,StringsRowId_1028,tony internet cafe,tony internet cafe
 1029,StringsRowId_1029,tesco - leyton superstore,tesco
 1030,StringsRowId_1030,smiling coast foods,smiling coast foods
-1031,StringsRowId_1031,pat's minimarket - #lgb1114,pat's minimarket - #lgb1114
+1031,StringsRowId_1031,pat's minimarket - #lgb1114,pat's minimarket
 1032,StringsRowId_1032,post office - friern barnet,post office
 1033,StringsRowId_1033,post office - chequers way,post office
 1034,StringsRowId_1034,post office - holders hill road,post office
@@ -1045,37 +1045,37 @@
 1043,StringsRowId_1043,post office - wembley hill,post office
 1044,StringsRowId_1044,finchley computer repair centre limited,finchley computer repair centre limited
 1045,StringsRowId_1045,post office - romford road,post office
-1046,StringsRowId_1046,aeman travel - #lgb0837,aeman travel - #lgb0837
+1046,StringsRowId_1046,aeman travel - #lgb0837,aeman travel
 1047,StringsRowId_1047,post office - carr road,post office
 1048,StringsRowId_1048,post office - ealing,post office
-1049,StringsRowId_1049,mmt global exchange - #lgb1068,mmt global exchange - #lgb1068
+1049,StringsRowId_1049,mmt global exchange - #lgb1068,mmt global exchange
 1050,StringsRowId_1050,tesco - ealing metro,tesco
-1051,StringsRowId_1051,nk news (romford 2),nk news (romford 2)
+1051,StringsRowId_1051,nk news (romford 2),nk news romford 2
 1052,StringsRowId_1052,thomas cook - ealing,thomas cook
 1053,StringsRowId_1053,nk newsagents ltd,nk newsagents ltd
-1054,StringsRowId_1054,s & s superstores,s & s superstores
+1054,StringsRowId_1054,s & s superstores,s  s superstores
 1055,StringsRowId_1055,tesco - thornton heath superstore,tesco
 1056,StringsRowId_1056,the travel world,the travel world
-1057,StringsRowId_1057,budget computers & cargo - #lgb0659,budget computers & cargo - #lgb0659
+1057,StringsRowId_1057,budget computers & cargo - #lgb0659,budget computers  cargo
 1058,StringsRowId_1058,ealing rug gallery,ealing rug gallery
-1059,StringsRowId_1059,winstaar food and wine - #lgb0936,winstaar food and wine - #lgb0936
+1059,StringsRowId_1059,winstaar food and wine - #lgb0936,winstaar food and wine
 1060,StringsRowId_1060,post office - barn hill,post office
 1061,StringsRowId_1061,post office - elmers end road,post office
 1062,StringsRowId_1062,wintana internet shop,wintana internet shop
 1063,StringsRowId_1063,post office - south ealing road,post office
 1064,StringsRowId_1064,post office - wood street,post office
-1065,StringsRowId_1065,tp & co - #lgb1033,tp & co - #lgb1033
+1065,StringsRowId_1065,tp & co - #lgb1033,tp  co
 1066,StringsRowId_1066,post office - billet road,post office
 1067,StringsRowId_1067,post office - upper edmonton,post office
-1068,StringsRowId_1068,ganesh money transfer - #lgb1072,ganesh money transfer - #lgb1072
-1069,StringsRowId_1069,cash point - #lgb1002,cash point - #lgb1002
+1068,StringsRowId_1068,ganesh money transfer - #lgb1072,ganesh money transfer
+1069,StringsRowId_1069,cash point - #lgb1002,cash point
 1070,StringsRowId_1070,electro link,electro link
 1071,StringsRowId_1071,qs news,qs news
 1072,StringsRowId_1072,fenbico ltd,fenbico ltd
 1073,StringsRowId_1073,post office - sibthorpe road,post office
 1074,StringsRowId_1074,post office - sheen road,post office
 1075,StringsRowId_1075,post office - wembley,post office
-1076,StringsRowId_1076,interlink - #lgb1083,interlink - #lgb1083
+1076,StringsRowId_1076,interlink - #lgb1083,interlink
 1077,StringsRowId_1077,post office - the pond,post office
 1078,StringsRowId_1078,just computers,just computers
 1079,StringsRowId_1079,post office - south norwood,post office
@@ -1093,13 +1093,13 @@
 1091,StringsRowId_1091,speedy cash,speedy cash
 1092,StringsRowId_1092,post office - kingsman parade,post office
 1093,StringsRowId_1093,post office - kew road,post office
-1094,StringsRowId_1094,economic exchange centre ltd - #lgb1256,economic exchange centre ltd - #lgb1256
+1094,StringsRowId_1094,economic exchange centre ltd - #lgb1256,economic exchange centre ltd
 1095,StringsRowId_1095,bfc exchange ltd - wembley,bfc exchange ltd
 1096,StringsRowId_1096,post office - east ham,post office
 1097,StringsRowId_1097,post office - martin way,post office
 1098,StringsRowId_1098,speedy cash - east ham,speedy cash
 1099,StringsRowId_1099,post office - morden,post office
-1100,StringsRowId_1100,r&z global services ltd,r&z global services ltd
+1100,StringsRowId_1100,r&z global services ltd,rz global services ltd
 1101,StringsRowId_1101,post office - beckton,post office
 1102,StringsRowId_1102,rak money exchange,rak money exchange
 1103,StringsRowId_1103,pak money transfer,pak money transfer
@@ -1107,15 +1107,15 @@
 1105,StringsRowId_1105,fast encash,fast encash
 1106,StringsRowId_1106,noble exchange - east ham,noble exchange
 1107,StringsRowId_1107,afo,afo
-1108,StringsRowId_1108,knk exchange bureau de change - #lgb0818,knk exchange bureau de change - #lgb0818
-1109,StringsRowId_1109,ocs - #lgb0819,ocs - #lgb0819
+1108,StringsRowId_1108,knk exchange bureau de change - #lgb0818,knk exchange bureau de change
+1109,StringsRowId_1109,ocs - #lgb0819,ocs
 1110,StringsRowId_1110,eastern mobile exchange ltd,eastern mobile exchange ltd
 1111,StringsRowId_1111,post office - high street south,post office
 1112,StringsRowId_1112,bfc exchange ltd - east ham,bfc exchange ltd
-1113,StringsRowId_1113,yaal food & wines,yaal food & wines
+1113,StringsRowId_1113,yaal food & wines,yaal food  wines
 1114,StringsRowId_1114,post office - high street north 256,post office
 1115,StringsRowId_1115,edmonton gadgets export,edmonton gadgets export
-1116,StringsRowId_1116,all in one xchange - #lgb1069,all in one xchange - #lgb1069
+1116,StringsRowId_1116,all in one xchange - #lgb1069,all in one xchange
 1117,StringsRowId_1117,post office - grove park,post office
 1118,StringsRowId_1118,post office - high street north 406,post office
 1119,StringsRowId_1119,post office - raynes park,post office
@@ -1150,15 +1150,15 @@
 1148,StringsRowId_1148,md enterprise,md enterprise
 1149,StringsRowId_1149,post office - grahame park,post office
 1150,StringsRowId_1150,post office - richmond,post office
-1151,StringsRowId_1151,jc gold hair & beauty salon - #lgb1011,jc gold hair & beauty salon - #lgb1011
+1151,StringsRowId_1151,jc gold hair & beauty salon - #lgb1011,jc gold hair  beauty salon
 1152,StringsRowId_1152,tesco - beckenham elmers end superstore,tesco
 1153,StringsRowId_1153,tesco - woolwich extra,tesco
 1154,StringsRowId_1154,post office - newmarket green,post office
 1155,StringsRowId_1155,portland wines,portland wines
 1156,StringsRowId_1156,post office - woolwich,post office
-1157,StringsRowId_1157,fast links services - #lgb0601,fast links services - #lgb0601
+1157,StringsRowId_1157,fast links services - #lgb0601,fast links services
 1158,StringsRowId_1158,tesco - greenford hoover building supers,tesco
-1159,StringsRowId_1159,muthoot finance - croydon,muthoot finance - croydon
+1159,StringsRowId_1159,muthoot finance - croydon,muthoot finance croydon
 1160,StringsRowId_1160,mepani news,mepani news
 1161,StringsRowId_1161,post office - hertford road(345),post office
 1162,StringsRowId_1162,post office - victoria road,post office
@@ -1171,13 +1171,13 @@
 1169,StringsRowId_1169,post office - boston parade,post office
 1170,StringsRowId_1170,rojevbe services,rojevbe services
 1171,StringsRowId_1171,confectionery box,confectionery box
-1172,StringsRowId_1172,validity - #lgb1305,validity - #lgb1305
+1172,StringsRowId_1172,validity - #lgb1305,validity
 1173,StringsRowId_1173,post office - russell lane,post office
 1174,StringsRowId_1174,post office - mitcham road (234),post office
 1175,StringsRowId_1175,bfc exchange ltd - croydon,bfc exchange ltd
-1176,StringsRowId_1176,asia travel - #lgb0899,asia travel - #lgb0899
+1176,StringsRowId_1176,asia travel - #lgb0899,asia travel
 1177,StringsRowId_1177,white hart telecoms,white hart telecoms
-1178,StringsRowId_1178,adonai logistics and exchange point - #l,adonai logistics and exchange point - #l
+1178,StringsRowId_1178,adonai logistics and exchange point - #l,adonai logistics and exchange point
 1179,StringsRowId_1179,post office - plumstead high street,post office
 1180,StringsRowId_1180,post office - hampden square,post office
 1181,StringsRowId_1181,post office - herbert road,post office
@@ -1198,7 +1198,7 @@
 1196,StringsRowId_1196,post office - park langley,post office
 1197,StringsRowId_1197,post office - harrow road,post office
 1198,StringsRowId_1198,post office - watling,post office
-1199,StringsRowId_1199,sri sai couriers ltd - #lgb0775,sri sai couriers ltd - #lgb0775
+1199,StringsRowId_1199,sri sai couriers ltd - #lgb0775,sri sai couriers ltd
 1200,StringsRowId_1200,post office - alperton,post office
 1201,StringsRowId_1201,post office - whetstone,post office
 1202,StringsRowId_1202,post office - walton road,post office
@@ -1208,7 +1208,7 @@
 1206,StringsRowId_1206,post office - addiscombe exchange,post office
 1207,StringsRowId_1207,post office - redbridge,post office
 1208,StringsRowId_1208,post office - green lanes,post office
-1209,StringsRowId_1209,hamude sign & design - #lgb0722,hamude sign & design - #lgb0722
+1209,StringsRowId_1209,hamude sign & design - #lgb0722,hamude sign  design
 1210,StringsRowId_1210,post office - mottingham,post office
 1211,StringsRowId_1211,post office - windermere avenue,post office
 1212,StringsRowId_1212,post office - rosehill,post office
@@ -1233,20 +1233,20 @@
 1231,StringsRowId_1231,post office - brewery road,post office
 1232,StringsRowId_1232,post office - deansbrook road,post office
 1233,StringsRowId_1233,post office - barking,post office
-1234,StringsRowId_1234,hamilton news - #lgb0934,hamilton news - #lgb0934
+1234,StringsRowId_1234,hamilton news - #lgb0934,hamilton news
 1235,StringsRowId_1235,post office - motspur park,post office
-1236,StringsRowId_1236,wari hair & beauty salon - #lgb0758,wari hair & beauty salon - #lgb0758
+1236,StringsRowId_1236,wari hair & beauty salon - #lgb0758,wari hair  beauty salon
 1237,StringsRowId_1237,thomas cook - croydon,thomas cook
 1238,StringsRowId_1238,post office - sutton common road,post office
 1239,StringsRowId_1239,zak money exchange ltd,zak money exchange ltd
 1240,StringsRowId_1240,post office - mill hill,post office
-1241,StringsRowId_1241,united cafe - #lgb1017,united cafe - #lgb1017
+1241,StringsRowId_1241,united cafe - #lgb1017,united cafe
 1242,StringsRowId_1242,noble exchange - ilford,noble exchange
 1243,StringsRowId_1243,aim money transfer ltd,aim money transfer ltd
 1244,StringsRowId_1244,quick xchange,quick xchange
 1245,StringsRowId_1245,3t companies,3t companies
-1246,StringsRowId_1246,wall street currency exchange - #lgb1203,wall street currency exchange - #lgb1203
-1247,StringsRowId_1247,chopra & sons ltd,chopra & sons ltd
+1246,StringsRowId_1246,wall street currency exchange - #lgb1203,wall street currency exchange
+1247,StringsRowId_1247,chopra & sons ltd,chopra  sons ltd
 1248,StringsRowId_1248,post office - greenford avenue,post office
 1249,StringsRowId_1249,lords pharmacy,lords pharmacy
 1250,StringsRowId_1250,post office - tudor drive,post office
@@ -1267,9 +1267,9 @@
 1265,StringsRowId_1265,post office - ilford,post office
 1266,StringsRowId_1266,tesco - woodford green superstore,tesco
 1267,StringsRowId_1267,thomas cook - bromley,thomas cook
-1268,StringsRowId_1268,sha cash & carry,sha cash & carry
+1268,StringsRowId_1268,sha cash & carry,sha cash  carry
 1269,StringsRowId_1269,post office - bromley,post office
-1270,StringsRowId_1270,k & h store,k & h store
+1270,StringsRowId_1270,k & h store,k  h store
 1271,StringsRowId_1271,post office - queensbury,post office
 1272,StringsRowId_1272,post office - cranbrook road 449,post office
 1273,StringsRowId_1273,debenhams - bromley,debenhams
@@ -1279,9 +1279,9 @@
 1277,StringsRowId_1277,aaa convenience store,aaa convenience store
 1278,StringsRowId_1278,post office - east barnet,post office
 1279,StringsRowId_1279,post office - chingford hatch,post office
-1280,StringsRowId_1280,richmond grocers - #lgb0663,richmond grocers - #lgb0663
+1280,StringsRowId_1280,richmond grocers - #lgb0663,richmond grocers
 1281,StringsRowId_1281,croydon convenience store,croydon convenience store
-1282,StringsRowId_1282,e-solutions,e-solutions
+1282,StringsRowId_1282,e-solutions,esolutions
 1283,StringsRowId_1283,vibe,vibe
 1284,StringsRowId_1284,innovtec solutions ltd,innovtec solutions ltd
 1285,StringsRowId_1285,post office - the mound,post office
@@ -1316,7 +1316,7 @@
 1314,StringsRowId_1314,post office - gordon road,post office
 1315,StringsRowId_1315,post office - hawks road,post office
 1316,StringsRowId_1316,post office - bramley road,post office
-1317,StringsRowId_1317,nnenna a. services,nnenna a. services
+1317,StringsRowId_1317,nnenna a. services,nnenna a services
 1318,StringsRowId_1318,post office - the broadway,post office
 1319,StringsRowId_1319,post office - bexley road,post office
 1320,StringsRowId_1320,oldfield lane newsagents,oldfield lane newsagents
@@ -1344,35 +1344,35 @@
 1342,StringsRowId_1342,post office - ponders end,post office
 1343,StringsRowId_1343,sameet news,sameet news
 1344,StringsRowId_1344,post office - hayesford park,post office
-1345,StringsRowId_1345,al-noor exchange,al-noor exchange
+1345,StringsRowId_1345,al-noor exchange,alnoor exchange
 1346,StringsRowId_1346,post office - worcester park,post office
-1347,StringsRowId_1347,century 21 harrow - #lgb0894,century 21 harrow - #lgb0894
+1347,StringsRowId_1347,century 21 harrow - #lgb0894,century 21 harrow
 1348,StringsRowId_1348,post office - longwood parade,post office
 1349,StringsRowId_1349,post office - eastern avenue,post office
-1350,StringsRowId_1350,equal solutions gb ltd - #lgb0682,equal solutions gb ltd - #lgb0682
+1350,StringsRowId_1350,equal solutions gb ltd - #lgb0682,equal solutions gb ltd
 1351,StringsRowId_1351,tesco - bromley superstore,tesco
 1352,StringsRowId_1352,hounslow communication ltd,hounslow communication ltd
 1353,StringsRowId_1353,thomas cook - worcester park,thomas cook
 1354,StringsRowId_1354,bfc exchange ltd - hounslow,bfc exchange ltd
 1355,StringsRowId_1355,thomas cook - kingston upon thames,thomas cook
-1356,StringsRowId_1356,las fierbinti - #lgb0723,las fierbinti - #lgb0723
+1356,StringsRowId_1356,las fierbinti - #lgb0723,las fierbinti
 1357,StringsRowId_1357,thomas cook - sutton,thomas cook
 1358,StringsRowId_1358,thomas cook - enfield,thomas cook
 1359,StringsRowId_1359,post office - enfield,post office
 1360,StringsRowId_1360,thomas cook - harrow,thomas cook
-1361,StringsRowId_1361,computer krayzee - #lgb0808,computer krayzee - #lgb0808
+1361,StringsRowId_1361,computer krayzee - #lgb0808,computer krayzee
 1362,StringsRowId_1362,post office - hampton wick,post office
 1363,StringsRowId_1363,post office - kingston upon thames,post office
 1364,StringsRowId_1364,jz mobile and laptop centre,jz mobile and laptop centre
 1365,StringsRowId_1365,splendour,splendour
 1366,StringsRowId_1366,post office - west wickham,post office
 1367,StringsRowId_1367,debenhams - harrow,debenhams
-1368,StringsRowId_1368,cooperative travel - west wickham,cooperative travel - west wickham
+1368,StringsRowId_1368,cooperative travel - west wickham,cooperative travel
 1369,StringsRowId_1369,post office - glengall road,post office
 1370,StringsRowId_1370,yaldirim phone shop london ltd,yaldirim phone shop london ltd
 1371,StringsRowId_1371,post office - allenby road,post office
 1372,StringsRowId_1372,post office - heath road,post office
-1373,StringsRowId_1373,ckc - #lgb0800,ckc - #lgb0800
+1373,StringsRowId_1373,ckc - #lgb0800,ckc
 1374,StringsRowId_1374,post office - eynsham drive,post office
 1375,StringsRowId_1375,debenhams - sutton,debenhams
 1376,StringsRowId_1376,tesco - enfield southbury road superstor,tesco
@@ -1387,17 +1387,17 @@
 1385,StringsRowId_1385,atco services uk,atco services uk
 1386,StringsRowId_1386,post office - lavender corner,post office
 1387,StringsRowId_1387,post office - corbylands road,post office
-1388,StringsRowId_1388,a & k convenience store,a & k convenience store
+1388,StringsRowId_1388,a & k convenience store,a  k convenience store
 1389,StringsRowId_1389,tesco - harrow station road superstore,tesco
 1390,StringsRowId_1390,post office - broom road,post office
-1391,StringsRowId_1391,nishan enterprises ltd - #lgb0167,nishan enterprises ltd - #lgb0167
+1391,StringsRowId_1391,nishan enterprises ltd - #lgb0167,nishan enterprises ltd
 1392,StringsRowId_1392,civic estates,civic estates
-1393,StringsRowId_1393,cooperative travel - welling,cooperative travel - welling
+1393,StringsRowId_1393,cooperative travel - welling,cooperative travel
 1394,StringsRowId_1394,post office - hounslow,post office
 1395,StringsRowId_1395,post office - fullwell avenue,post office
 1396,StringsRowId_1396,post office - mount pleasant,post office
 1397,StringsRowId_1397,post office - welling,post office
-1398,StringsRowId_1398,costcutter - #lgb0796,costcutter - #lgb0796
+1398,StringsRowId_1398,costcutter - #lgb0796,costcutter
 1399,StringsRowId_1399,nationwide,nationwide
 1400,StringsRowId_1400,nationwide,nationwide
 1401,StringsRowId_1401,american express europe ltd,american express europe ltd
@@ -1437,18 +1437,18 @@
 1435,StringsRowId_1435,asda leyton mills superstore,asda
 1436,StringsRowId_1436,nationwide,nationwide
 1437,StringsRowId_1437,lloyds bank,lloyds
-1438,StringsRowId_1438,andrews estate agents,andrews estate agents
+1438,StringsRowId_1438,andrews estate agents,andrews
 1439,StringsRowId_1439,nationwide,nationwide
 1440,StringsRowId_1440,bank of baroda,bank of baroda
 1441,StringsRowId_1441,nationwide,nationwide
-1442,StringsRowId_1442,andrews estate agents,andrews estate agents
+1442,StringsRowId_1442,andrews estate agents,andrews
 1443,StringsRowId_1443,coutts,coutts
 1444,StringsRowId_1444,bank of england,bank of england
 1445,StringsRowId_1445,asda,asda
 1446,StringsRowId_1446,ubs bank,ubs bank
 1447,StringsRowId_1447,city forex ltd,city forex ltd
 1448,StringsRowId_1448,lloyds bank,lloyds
-1449,StringsRowId_1449,bain & company,bain & company
+1449,StringsRowId_1449,bain & company,bain  company
 1450,StringsRowId_1450,pricewaterhousecoopers,pricewaterhousecoopers
 1451,StringsRowId_1451,gloucester road post office,post office
 1452,StringsRowId_1452,lloyds bank,lloyds
@@ -1459,7 +1459,7 @@
 1457,StringsRowId_1457,willis towers watson,willis towers watson
 1458,StringsRowId_1458,bats europe,bats europe
 1459,StringsRowId_1459,tsb,tsb
-1460,StringsRowId_1460,ace-fx,ace-fx
+1460,StringsRowId_1460,ace-fx,acefx
 1461,StringsRowId_1461,yorkshire building society,yorkshire building society
 1462,StringsRowId_1462,lloyds bank,lloyds
 1463,StringsRowId_1463,asda charlton,asda
@@ -1481,10 +1481,10 @@
 1479,StringsRowId_1479,thomas exchange global,thomas exchange global
 1480,StringsRowId_1480,lloyds bank,lloyds
 1481,StringsRowId_1481,lloyds bank,lloyds
-1482,StringsRowId_1482,allianz global corporate & specialty,allianz global corporate & specialty
+1482,StringsRowId_1482,allianz global corporate & specialty,allianz global corporate  specialty
 1483,StringsRowId_1483,atc solutions limited,atc solutions limited
 1484,StringsRowId_1484,asda isle of dogs superstore,asda
-1485,StringsRowId_1485,andrews estate agents,andrews estate agents
+1485,StringsRowId_1485,andrews estate agents,andrews
 1486,StringsRowId_1486,international accounting standards board,international accounting standards board
 1487,StringsRowId_1487,lloyds bank,lloyds
 1488,StringsRowId_1488,halifax,halifax
@@ -1494,31 +1494,31 @@
 1492,StringsRowId_1492,lloyds bank,lloyds
 1493,StringsRowId_1493,hsbc,hsbc
 1494,StringsRowId_1494,nationwide,nationwide
-1495,StringsRowId_1495,andrews estate agents,andrews estate agents
-1496,StringsRowId_1496,andrews estate agents,andrews estate agents
+1495,StringsRowId_1495,andrews estate agents,andrews
+1496,StringsRowId_1496,andrews estate agents,andrews
 1497,StringsRowId_1497,henderson global investors,henderson global investors
 1498,StringsRowId_1498,cubitt & west,cubitt west
 1499,StringsRowId_1499,peter jones,peter jones
 1500,StringsRowId_1500,lloyds bank,lloyds
-1501,StringsRowId_1501,pwc - pricewaterhousecoopers llp,pwc - pricewaterhousecoopers llp
+1501,StringsRowId_1501,pwc - pricewaterhousecoopers llp,pwc pricewaterhousecoopers llp
 1502,StringsRowId_1502,yorkshire building society,yorkshire building society
 1503,StringsRowId_1503,lloyds bank,lloyds
 1504,StringsRowId_1504,baseo tcr,baseo tcr
 1505,StringsRowId_1505,banca march,banca march
-1506,StringsRowId_1506,royal exchange (teg capital) limited,royal exchange (teg capital) limited
+1506,StringsRowId_1506,royal exchange (teg capital) limited,royal exchange teg capital limited
 1507,StringsRowId_1507,savills wapping,savills wapping
-1508,StringsRowId_1508,andrews estate agents,andrews estate agents
+1508,StringsRowId_1508,andrews estate agents,andrews
 1509,StringsRowId_1509,lanop accountants,lanop accountants
 1510,StringsRowId_1510,c i m b bank,c i m b bank
 1511,StringsRowId_1511,barclays bank - city road,barclays bank
 1512,StringsRowId_1512,dawes road post office,post office
 1513,StringsRowId_1513,lloyds bank,lloyds
 1514,StringsRowId_1514,eastcheap post office,post office
-1515,StringsRowId_1515,ria money transfer & currency exchange,ria money transfer & currency exchange
+1515,StringsRowId_1515,ria money transfer & currency exchange,ria money transfer  currency exchange
 1516,StringsRowId_1516,nationwide,nationwide
 1517,StringsRowId_1517,connells estate agents in copthorne,connells estate agents
 1518,StringsRowId_1518,asda beckton superstore,asda
-1519,StringsRowId_1519,cash & cheque express croydon,cash & cheque express croydon
+1519,StringsRowId_1519,cash & cheque express croydon,cash  cheque express croydon
 1520,StringsRowId_1520,asda burgh heath,asda
 1521,StringsRowId_1521,lloyds bank,lloyds
 1522,StringsRowId_1522,connells estate agents,connells estate agents
@@ -1535,7 +1535,7 @@
 1533,StringsRowId_1533,connells estate agents in crawley,connells estate agents
 1534,StringsRowId_1534,uae exchange uk,uae exchange uk
 1535,StringsRowId_1535,185 brockley road sub post office,post office
-1536,StringsRowId_1536,andrews estate agents,andrews estate agents
+1536,StringsRowId_1536,andrews estate agents,andrews
 1537,StringsRowId_1537,hsbc,hsbc
 1538,StringsRowId_1538,yorkshire building society,yorkshire building society
 1539,StringsRowId_1539,ludlowthompson tooting,ludlowthompson tooting
@@ -1544,7 +1544,7 @@
 1542,StringsRowId_1542,lloyds bank,lloyds
 1543,StringsRowId_1543,cash converters,cash converters
 1544,StringsRowId_1544,halifax,halifax
-1545,StringsRowId_1545,andrews estate agents,andrews estate agents
+1545,StringsRowId_1545,andrews estate agents,andrews
 1546,StringsRowId_1546,flemmings,flemmings
 1547,StringsRowId_1547,skipton building society - croydon,skipton building society
 1548,StringsRowId_1548,lloyds bank,lloyds
@@ -1556,7 +1556,7 @@
 1554,StringsRowId_1554,lloyds bank,lloyds
 1555,StringsRowId_1555,twm solicitors - wimbledon,twm solicitors
 1556,StringsRowId_1556,post office,post office
-1557,StringsRowId_1557,andrews estate agents,andrews estate agents
+1557,StringsRowId_1557,andrews estate agents,andrews
 1558,StringsRowId_1558,morland road sub post office,post office
 1559,StringsRowId_1559,shipley bridge garage ltd,shipley bridge garage ltd
 1560,StringsRowId_1560,royal mail,royal mail
@@ -1574,7 +1574,7 @@
 1572,StringsRowId_1572,latitude residential,latitude residential
 1573,StringsRowId_1573,reed accountancy,reed accountancy
 1574,StringsRowId_1574,barclays bank - canary wharf,barclays bank
-1575,StringsRowId_1575,cruse & burke accountants,cruse & burke accountants
+1575,StringsRowId_1575,cruse & burke accountants,cruse  burke accountants
 1576,StringsRowId_1576,kingswood estate agents,kingswood estate agents
 1577,StringsRowId_1577,natwest,natwest
 1578,StringsRowId_1578,cash converters,cash converters
@@ -1587,14 +1587,14 @@
 1585,StringsRowId_1585,asda,asda
 1586,StringsRowId_1586,willis towers watson ltd,willis towers watson ltd
 1587,StringsRowId_1587,lewisham way post office,post office
-1588,StringsRowId_1588,andrews estate agents,andrews estate agents
-1589,StringsRowId_1589,h&t pawnbrokers,h&t pawnbrokers
+1588,StringsRowId_1588,andrews estate agents,andrews
+1589,StringsRowId_1589,h&t pawnbrokers,ht pawnbrokers
 1590,StringsRowId_1590,brewin dolphin,brewin dolphin
 1591,StringsRowId_1591,barclays bank - catford,barclays bank
 1592,StringsRowId_1592,asda peckham supermarket,asda
 1593,StringsRowId_1593,ludlowthompson oval,ludlowthompson oval
 1594,StringsRowId_1594,carter jonas,carter jonas
-1595,StringsRowId_1595,s&p global,s&p global
+1595,StringsRowId_1595,s&p global,sp global
 1596,StringsRowId_1596,asda supermarket mitcham,asda
 1597,StringsRowId_1597,nationwide,nationwide
 1598,StringsRowId_1598,nationwide,nationwide
@@ -1608,15 +1608,15 @@
 1606,StringsRowId_1606,bank of india ltd,bank of india ltd
 1607,StringsRowId_1607,lloyds bank,lloyds
 1608,StringsRowId_1608,brentwood road sub post office,post office
-1609,StringsRowId_1609,macturner accounting ltd.,macturner accounting ltd.
+1609,StringsRowId_1609,macturner accounting ltd.,macturner accounting ltd
 1610,StringsRowId_1610,opal transfer,opal transfer
 1611,StringsRowId_1611,lloyds bank,lloyds
 1612,StringsRowId_1612,john lewis,john lewis
 1613,StringsRowId_1613,the money shop,the money shop
 1614,StringsRowId_1614,hsbc,hsbc
-1615,StringsRowId_1615,ernst & young llp,ernst & young llp
-1616,StringsRowId_1616,times associates ltd.,times associates ltd.
-1617,StringsRowId_1617,hm revenue & customs,hm revenue & customs
+1615,StringsRowId_1615,ernst & young llp,ernst  young llp
+1616,StringsRowId_1616,times associates ltd.,times associates ltd
+1617,StringsRowId_1617,hm revenue & customs,hm revenue  customs
 1618,StringsRowId_1618,natwest,natwest
 1619,StringsRowId_1619,vsa capital group ltd,vsa capital group ltd
 1620,StringsRowId_1620,msci ltd,msci ltd
@@ -1625,7 +1625,7 @@
 1623,StringsRowId_1623,sbs associates ltd,sbs associates ltd
 1624,StringsRowId_1624,post office ltd,post office
 1625,StringsRowId_1625,lloyds bank,lloyds
-1626,StringsRowId_1626,hurford salvi carr - docklands estate agents,hurford salvi carr - docklands estate agents
+1626,StringsRowId_1626,hurford salvi carr - docklands estate agents,hurford salvi carr
 1627,StringsRowId_1627,societe generale,societe generale
 1628,StringsRowId_1628,ftse group,ftse group
 1629,StringsRowId_1629,279 wood lane post office,post office
@@ -1655,15 +1655,15 @@
 1653,StringsRowId_1653,post office,post office
 1654,StringsRowId_1654,asda slough superstore,asda
 1655,StringsRowId_1655,ldic group,ldic group
-1656,StringsRowId_1656,bank leumi (uk) plc,bank leumi (uk) plc
+1656,StringsRowId_1656,bank leumi (uk) plc,bank leumi uk plc
 1657,StringsRowId_1657,chestertons chelsea,chestertons chelsea
-1658,StringsRowId_1658,n k & co ltd,n k & co ltd
+1658,StringsRowId_1658,n k & co ltd,n k  co ltd
 1659,StringsRowId_1659,nationwide,nationwide
 1660,StringsRowId_1660,nationwide,nationwide
 1661,StringsRowId_1661,nationwide,nationwide
 1662,StringsRowId_1662,nationwide,nationwide
 1663,StringsRowId_1663,connells estate agents in horsham,connells estate agents
-1664,StringsRowId_1664,bmg jewellery & real piercing & tattoo studio,bmg jewellery & real piercing & tattoo studio
+1664,StringsRowId_1664,bmg jewellery & real piercing & tattoo studio,bmg jewellery  real piercing  tattoo studio
 1665,StringsRowId_1665,connells estate agents in haywards heath,connells estate agents
 1666,StringsRowId_1666,lloyds bank,lloyds
 1667,StringsRowId_1667,yorkshire building society,yorkshire building society
@@ -1681,9 +1681,9 @@
 1679,StringsRowId_1679,broadbridge heath post office,post office
 1680,StringsRowId_1680,lloyds bank,lloyds
 1681,StringsRowId_1681,halifax,halifax
-1682,StringsRowId_1682,fox & sons estate agents in crawley,fox & sons estate agents in crawley
+1682,StringsRowId_1682,fox & sons estate agents in crawley,fox  sons estate agents in crawley
 1683,StringsRowId_1683,skipton building society - dorking,skipton building society
-1684,StringsRowId_1684,kingston smith & partners llp,kingston smith & partners llp
+1684,StringsRowId_1684,kingston smith & partners llp,kingston smith  partners llp
 1685,StringsRowId_1685,maitland ltd,maitland ltd
 1686,StringsRowId_1686,barclays bank - haywards heath south road,barclays bank
 1687,StringsRowId_1687,cubitt & west,cubitt west
@@ -1697,13 +1697,13 @@
 1695,StringsRowId_1695,natwest bank,natwest
 1696,StringsRowId_1696,cubitt & west,cubitt west
 1697,StringsRowId_1697,halifax,halifax
-1698,StringsRowId_1698,"kreston reeves, gatwick office","kreston reeves, gatwick office"
+1698,StringsRowId_1698,"kreston reeves, gatwick office",kreston reeves
 1699,StringsRowId_1699,lloyds bank,lloyds
 1700,StringsRowId_1700,natwest bank,natwest
 1701,StringsRowId_1701,numis ltd,numis ltd
 1702,StringsRowId_1702,cubitt & west,cubitt west
 1703,StringsRowId_1703,twm solicitors - epsom,twm solicitors
-1704,StringsRowId_1704,unbeatablecar - crawley car supermarket,unbeatablecar - crawley car supermarket
+1704,StringsRowId_1704,unbeatablecar - crawley car supermarket,unbeatablecar crawley car supermarket
 1705,StringsRowId_1705,five ash down post office,post office
 1706,StringsRowId_1706,tilgate post office,post office
 1707,StringsRowId_1707,cubitt & west,cubitt west
@@ -1711,7 +1711,7 @@
 1709,StringsRowId_1709,knight frank horsham estate agents,knight frank horsham estate agents
 1710,StringsRowId_1710,santander consumer (uk) plc,santander
 1711,StringsRowId_1711,pruden and smith,pruden and smith
-1712,StringsRowId_1712,andrews estate agents,andrews estate agents
+1712,StringsRowId_1712,andrews estate agents,andrews
 1713,StringsRowId_1713,hsbc bank plc,hsbc
 1714,StringsRowId_1714,halifax,halifax
 1715,StringsRowId_1715,taxassist accountants,taxassist accountants
@@ -1725,14 +1725,14 @@
 1723,StringsRowId_1723,twm solicitors - reigate,twm solicitors
 1724,StringsRowId_1724,cubitt & west,cubitt west
 1725,StringsRowId_1725,vail williams crawley,vail williams crawley
-1726,StringsRowId_1726,t & w accountancy solutions ltd,t & w accountancy solutions ltd
+1726,StringsRowId_1726,t & w accountancy solutions ltd,t  w accountancy solutions ltd
 1727,StringsRowId_1727,halifax,halifax
 1728,StringsRowId_1728,hunters estate agents,hunters estate agents
 1729,StringsRowId_1729,taxassist accountants,taxassist accountants
 1730,StringsRowId_1730,halifax,halifax
 1731,StringsRowId_1731,taxassist accountants,taxassist accountants
 1732,StringsRowId_1732,barnard marcus estate agents in epsom,barnard marcus estate agents in epsom
-1733,StringsRowId_1733,aynesley walters cohen ltd chartered certified accountants & business advisors croydon,aynesley walters cohen ltd chartered certified accountants & business advisors croydon
+1733,StringsRowId_1733,aynesley walters cohen ltd chartered certified accountants & business advisors croydon,aynesley walters cohen ltd chartered certified accountants  business advisors croydon
 1734,StringsRowId_1734,nationwide,nationwide
 1735,StringsRowId_1735,post office ltd,post office
 1736,StringsRowId_1736,coco accounts,coco accounts
@@ -1741,7 +1741,7 @@
 1739,StringsRowId_1739,r g a accounting ltd,r g a accounting ltd
 1740,StringsRowId_1740,lloyds bank,lloyds
 1741,StringsRowId_1741,halifax,halifax
-1742,StringsRowId_1742,andrews estate agents,andrews estate agents
+1742,StringsRowId_1742,andrews estate agents,andrews
 1743,StringsRowId_1743,warmingtons,warmingtons
 1744,StringsRowId_1744,taxassist accountants,taxassist accountants
 1745,StringsRowId_1745,riddlesdown sub post office,post office
@@ -1753,13 +1753,13 @@
 1751,StringsRowId_1751,royal mail,royal mail
 1752,StringsRowId_1752,asda harlow superstore,asda
 1753,StringsRowId_1753,unistream uk leyton branch,unistream uk leyton branch
-1754,StringsRowId_1754,hurford salvi carr - clerkenwell estate agents (sales),hurford salvi carr - clerkenwell estate agents (sales)
-1755,StringsRowId_1755,hurford salvi carr - bloomsbury estate agents,hurford salvi carr - bloomsbury estate agents
+1754,StringsRowId_1754,hurford salvi carr - clerkenwell estate agents (sales),hurford salvi carr
+1755,StringsRowId_1755,hurford salvi carr - bloomsbury estate agents,hurford salvi carr
 1756,StringsRowId_1756,post office,post office
 1757,StringsRowId_1757,ibis capital,ibis capital
 1758,StringsRowId_1758,metro bank holborn,metro bank holborn
 1759,StringsRowId_1759,natwest,natwest
-1760,StringsRowId_1760,d.c. thomson & co. ltd.,d.c. thomson & co. ltd.
+1760,StringsRowId_1760,d.c. thomson & co. ltd.,dc thomson  co ltd
 1761,StringsRowId_1761,yorkshire building society,yorkshire building society
 1762,StringsRowId_1762,royal mail,royal mail
 1763,StringsRowId_1763,pinks,pinks
@@ -1770,7 +1770,7 @@
 1768,StringsRowId_1768,farncombe street sub post office,post office
 1769,StringsRowId_1769,lloyds bank,lloyds
 1770,StringsRowId_1770,surrey university post office,post office
-1771,StringsRowId_1771,"clarke gammon wellers, guildford | estate agents","clarke gammon wellers, guildford | estate agents"
+1771,StringsRowId_1771,"clarke gammon wellers, guildford | estate agents",clarke gammon wellers guildford | estate agents
 1772,StringsRowId_1772,romans estate agents,romans estate agents
 1773,StringsRowId_1773,lloyds bank,lloyds
 1774,StringsRowId_1774,atkinsons chartered accountants,atkinsons chartered accountants
@@ -1793,7 +1793,7 @@
 1791,StringsRowId_1791,natwest bank,natwest
 1792,StringsRowId_1792,henfield post office,post office
 1793,StringsRowId_1793,cubitt & west,cubitt west
-1794,StringsRowId_1794,d a clark & co,d a clark & co
+1794,StringsRowId_1794,d a clark & co,d a clark  co
 1795,StringsRowId_1795,barclays bank - sutton high st,barclays bank
 1796,StringsRowId_1796,byfleet sub post office,post office
 1797,StringsRowId_1797,natwest bank,natwest
@@ -1818,9 +1818,9 @@
 1816,StringsRowId_1816,citi money exchange,citi money exchange
 1817,StringsRowId_1817,summit capital mortgages london,summit capital mortgages london
 1818,StringsRowId_1818,etx capital,etx capital
-1819,StringsRowId_1819,standard life investments,standard life investments
+1819,StringsRowId_1819,standard life investments,standard life
 1820,StringsRowId_1820,danske bank,danske bank
-1821,StringsRowId_1821,east london mail centre & e1 delivery office,east london mail centre & e1 delivery office
+1821,StringsRowId_1821,east london mail centre & e1 delivery office,east london mail centre  e1 delivery office
 1822,StringsRowId_1822,halifax,halifax
 1823,StringsRowId_1823,countrywide,countrywide
 1824,StringsRowId_1824,ben jonson road post office,post office
@@ -1835,7 +1835,7 @@
 1833,StringsRowId_1833,the crest partnership limited,the crest partnership limited
 1834,StringsRowId_1834,natwest bank,natwest
 1835,StringsRowId_1835,nationwide,nationwide
-1836,StringsRowId_1836,thomson snell & passmore,thomson snell & passmore
+1836,StringsRowId_1836,thomson snell & passmore,thomson snell  passmore
 1837,StringsRowId_1837,post office,post office
 1838,StringsRowId_1838,natwest bank,natwest
 1839,StringsRowId_1839,rusthall post office,post office
@@ -1847,7 +1847,7 @@
 1845,StringsRowId_1845,natwest bank,natwest
 1846,StringsRowId_1846,m p evans group plc,m p evans group plc
 1847,StringsRowId_1847,neva consultants,neva consultants
-1848,StringsRowId_1848,coutts & co,coutts & co
+1848,StringsRowId_1848,coutts & co,coutts  co
 1849,StringsRowId_1849,nationwide,nationwide
 1850,StringsRowId_1850,toulson jones jewellers,toulson jones jewellers
 1851,StringsRowId_1851,lloyds bank,lloyds
@@ -1856,22 +1856,22 @@
 1854,StringsRowId_1854,halifax,halifax
 1855,StringsRowId_1855,barclays bank - horley,barclays bank
 1856,StringsRowId_1856,auction advisory service,auction advisory service
-1857,StringsRowId_1857,sundridge supermarket (premier),sundridge supermarket (premier)
-1858,StringsRowId_1858,andrews estate agents,andrews estate agents
+1857,StringsRowId_1857,sundridge supermarket (premier),sundridge supermarket premier
+1858,StringsRowId_1858,andrews estate agents,andrews
 1859,StringsRowId_1859,ward & partners,ward partners
 1860,StringsRowId_1860,lloyds bank,lloyds
 1861,StringsRowId_1861,nationwide,nationwide
-1862,StringsRowId_1862,the co-operative food,the co-operative food
+1862,StringsRowId_1862,the co-operative food,the cooperative food
 1863,StringsRowId_1863,thomas cook travel ltd,thomas cook
 1864,StringsRowId_1864,boughton monchelsea post office,post office
 1865,StringsRowId_1865,ward & partners,ward partners
-1866,StringsRowId_1866,payne & co,payne & co
+1866,StringsRowId_1866,payne & co,payne  co
 1867,StringsRowId_1867,simmons gainsford llp,simmons gainsford llp
 1868,StringsRowId_1868,mobile money ltd,mobile money ltd
 1869,StringsRowId_1869,barclays bank - orpington,barclays bank
 1870,StringsRowId_1870,natwest bank,natwest
 1871,StringsRowId_1871,natwest bank,natwest
-1872,StringsRowId_1872,sturdy edwards - ifa,sturdy edwards - ifa
+1872,StringsRowId_1872,sturdy edwards - ifa,sturdy edwards ifa
 1873,StringsRowId_1873,natwest,natwest
 1874,StringsRowId_1874,natwest,natwest
 1875,StringsRowId_1875,sevenoaks travel,sevenoaks travel
@@ -1886,38 +1886,38 @@
 1884,StringsRowId_1884,lloyds bank,lloyds
 1885,StringsRowId_1885,royal mail,royal mail
 1886,StringsRowId_1886,thomas cook travel ltd,thomas cook
-1887,StringsRowId_1887,f.hinds the jewellers,f.hinds the jewellers
+1887,StringsRowId_1887,f.hinds the jewellers,fhinds the jewellers
 1888,StringsRowId_1888,lloyds bank,lloyds
 1889,StringsRowId_1889,skipton building society - woking,skipton building society
-1890,StringsRowId_1890,"asc finance for business, surrey","asc finance for business, surrey"
+1890,StringsRowId_1890,"asc finance for business, surrey",asc finance for business
 1891,StringsRowId_1891,post office,post office
-1892,StringsRowId_1892,"manners residential - lettings, sales & property management","manners residential - lettings, sales & property management"
-1893,StringsRowId_1893,"seymours estate agents, woking","seymours estate agents, woking"
-1894,StringsRowId_1894,bridges estate agents- residential sales and lettings,bridges estate agents- residential sales and lettings
+1892,StringsRowId_1892,"manners residential - lettings, sales & property management",manners residential lettings sales  property management
+1893,StringsRowId_1893,"seymours estate agents, woking",seymours estate agents woking
+1894,StringsRowId_1894,bridges estate agents- residential sales and lettings,bridges estate agentsresidential sales and lettings
 1895,StringsRowId_1895,post office,post office
 1896,StringsRowId_1896,barclays bank - north farnborough,barclays bank
 1897,StringsRowId_1897,keats fearn,keats fearn
-1898,StringsRowId_1898,"seymours estate agents, godalming. sales, lettings & management","seymours estate agents, godalming. sales, lettings & management"
+1898,StringsRowId_1898,"seymours estate agents, godalming. sales, lettings & management",seymours estate agents godalming sales lettings  management
 1899,StringsRowId_1899,twm solicitors - guildford,twm solicitors
 1900,StringsRowId_1900,pembroke consulting,pembroke consulting
 1901,StringsRowId_1901,hsbc,hsbc
 1902,StringsRowId_1902,fe,fe
-1903,StringsRowId_1903,"my first car sales, service, mot and repairs","my first car sales, service, mot and repairs"
+1903,StringsRowId_1903,"my first car sales, service, mot and repairs",my first car sales service mot and repairs
 1904,StringsRowId_1904,tower hill garage,tower hill garage
 1905,StringsRowId_1905,natwest,natwest
 1906,StringsRowId_1906,santander,santander
 1907,StringsRowId_1907,walton on thames post office (mains),post office
-1908,StringsRowId_1908,www.cashyourgoldin.webs.com,www.cashyourgoldin.webs.com
+1908,StringsRowId_1908,www.cashyourgoldin.webs.com,wwwcashyourgoldinwebscom
 1909,StringsRowId_1909,rochills estate agents,rochills estate agents
 1910,StringsRowId_1910,halifax,halifax
-1911,StringsRowId_1911,mail boxes etc. guildford,mail boxes etc. guildford
+1911,StringsRowId_1911,mail boxes etc. guildford,mail boxes etc guildford
 1912,StringsRowId_1912,halifax,halifax
 1913,StringsRowId_1913,james fancy,james fancy
 1914,StringsRowId_1914,halifax,halifax
 1915,StringsRowId_1915,bristow burrell,bristow burrell
 1916,StringsRowId_1916,natwest bank,natwest
 1917,StringsRowId_1917,hsbc bank plc,hsbc
-1918,StringsRowId_1918,martin & co accountants,martin & co accountants
+1918,StringsRowId_1918,martin & co accountants,martin  co accountants
 1919,StringsRowId_1919,jonathan toop,jonathan toop
 1920,StringsRowId_1920,hodders estate agents chertsey,hodders estate agents chertsey
 1921,StringsRowId_1921,natwest,natwest
@@ -1932,11 +1932,11 @@
 1930,StringsRowId_1930,natwest bank,natwest
 1931,StringsRowId_1931,perera lynch,perera lynch
 1932,StringsRowId_1932,taxassist accountants,taxassist accountants
-1933,StringsRowId_1933,ray spooner & co,ray spooner & co
+1933,StringsRowId_1933,ray spooner & co,ray spooner  co
 1934,StringsRowId_1934,woodbridge hill sub post office,post office
-1935,StringsRowId_1935,jmsolutions (guildford),jmsolutions (guildford)
+1935,StringsRowId_1935,jmsolutions (guildford),jmsolutions guildford
 1936,StringsRowId_1936,metro bank,metro bank
-1937,StringsRowId_1937,pidgeon john s & co,pidgeon john s & co
+1937,StringsRowId_1937,pidgeon john s & co,pidgeon john s  co
 1938,StringsRowId_1938,taxassist accountants,taxassist accountants
 1939,StringsRowId_1939,royal mail guildford mail centre,royal mail
 1940,StringsRowId_1940,halo corporate finance limited,halo corporate finance limited
@@ -1944,7 +1944,7 @@
 1942,StringsRowId_1942,limelight accountancy ltd,limelight accountancy ltd
 1943,StringsRowId_1943,pesters,pesters
 1944,StringsRowId_1944,treetops chartered accountants,treetops chartered accountants
-1945,StringsRowId_1945,riches & company,riches & company
+1945,StringsRowId_1945,riches & company,riches  company
 1946,StringsRowId_1946,twm solicitors - cranleigh,twm solicitors
 1947,StringsRowId_1947,lion finance,lion finance
 1948,StringsRowId_1948,faccini anthony,faccini anthony
@@ -1967,7 +1967,7 @@
 1965,StringsRowId_1965,bianchi chartered surveyors,bianchi chartered surveyors
 1966,StringsRowId_1966,skipton building society - kingston,skipton building society
 1967,StringsRowId_1967,barnard marcus,barnard marcus
-1968,StringsRowId_1968,featherstone leigh - teddington estate agents,featherstone leigh - teddington estate agents
+1968,StringsRowId_1968,featherstone leigh - teddington estate agents,featherstone leigh
 1969,StringsRowId_1969,lloyds bank,lloyds
 1970,StringsRowId_1970,natwest,natwest
 1971,StringsRowId_1971,hornsey sub post office,post office
@@ -1975,7 +1975,7 @@
 1973,StringsRowId_1973,post office,post office
 1974,StringsRowId_1974,asda twickenham supermarket,asda
 1975,StringsRowId_1975,tsb bank plc,tsb bank
-1976,StringsRowId_1976,featherstone leigh - richmond estate agents,featherstone leigh - richmond estate agents
+1976,StringsRowId_1976,featherstone leigh - richmond estate agents,featherstone leigh
 1977,StringsRowId_1977,halifax,halifax
 1978,StringsRowId_1978,james,james
 1979,StringsRowId_1979,intercounty great dunmow,intercounty great dunmow
