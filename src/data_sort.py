@@ -156,10 +156,7 @@ class data_sort:
 		if len(address_series) == 0: pass
 		#Delete the names containing postal adderss
 		else:
-			for i in address_series:
-				check_word = i
-				if np.any(name_series[name_series.str.contains(check_word)] != pd.Series.empty): 
-					name_series.loc[name_series.str.contains(check_word)] = name_series.loc[name_series.str.contains(check_word)].str.replace(check_word, '')
+			name_series = [e.replace(k, '') for e, k in zip(name_series, address_series)]
 
 		one_word = self.one_word_list(name_series)
 		unigrams = self.delete_nonsense(Counter(self.get_ngram(one_word,1)))
@@ -218,6 +215,8 @@ class data_sort:
 	#Orgnize the results in to required format
 	def output_data(self):
 		data = self.get_tagged()
+		if 'town' in data.columns: 
+			data = data.drop(['town'], axis = 1)
 		new_data1 = data.groupby('tags')['_id'].apply(lambda x: list(x)).reset_index()
 		new_data2 = data.groupby('tags').count().reset_index().drop(['_id'], axis = 1).rename(columns = {'name':'count'})
 		combined_output = pd.merge(new_data1, new_data2, on = 'tags').rename(columns={'_id':'rows'})
