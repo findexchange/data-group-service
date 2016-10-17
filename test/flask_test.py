@@ -34,7 +34,7 @@ class FlaskrTestCase(unittest.TestCase):
 		import pandas as pd
 		data_frame = pd.read_json(json.dumps(result))
 		count = data_frame['count']
-		rows = data_frame['rows']		
+		rows = data_frame['rows']
 		count_ids_rows = rows.apply(lambda x: str(x)).apply(lambda x : x.strip('[]').split(',')).apply(lambda x: len(x))
 		data_frame['no_in_group'] = count_ids_rows
 		compare_with_count =  data_frame[~data_frame['count'] == data_frame['no_in_group']]
