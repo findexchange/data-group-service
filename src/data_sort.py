@@ -136,7 +136,6 @@ class data_sort:
 		strings = ' '.join(strings)
 		strings = strings.replace('#','')
 		strings = strings.strip()
-		# strings = str(strings)
 		return strings    
 
 
@@ -195,7 +194,6 @@ class data_sort:
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
 		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
 		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
-		# all_data_df.name = all_data_df.name.apply(lambda x: str(x))
 		#return keyword that has frequency larger than or equal to n
 		return all_data_df[all_data_df['frequency'] >= n].reset_index().drop(['index'], axis = 1)
 
