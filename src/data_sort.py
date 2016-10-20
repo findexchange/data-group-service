@@ -140,7 +140,7 @@ class data_sort:
 
 	@staticmethod
 	def replace_no_char_on_tag(strings):
-		strings = strings.replace('-', '')
+		strings = strings.replace('-', ' ')
 		strings = strings.replace('.', '')
 		strings = strings.replace(',', '')
 		strings = strings.replace('\"', '')
