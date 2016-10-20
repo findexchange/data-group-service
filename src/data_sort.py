@@ -83,9 +83,8 @@ class data_sort:
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
-			postal_town = dataframe.town.dropna()
-			unique_postal_array = np.unique(np.array(postal_town))
-			return unique_postal_array
+			postal_town = dataframe.town.fillna('')
+			return postal_town
 		else:	
 			return ''
 
@@ -159,7 +158,8 @@ class data_sort:
 	def aggreate_all(self, n = 2):
 		name_series = self.get_clean_names()
 		address_series = self.get_clean_address()
-		if len(address_series) == 0: pass
+		if len(address_series) == 0: 
+			name_series = name_series
 		#Delete the names containing postal adderss
 		else:
 			name_series = [e.replace(k, '') for e, k in zip(name_series, address_series)]
