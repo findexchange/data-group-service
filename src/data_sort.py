@@ -1,9 +1,10 @@
+#  -*- coding: utf-8 -*-
 import pandas as pd
 from collections import Counter
 import re
 import json
 import numpy as np
-
+from types import NoneType
 
 class data_sort:
 
@@ -25,14 +26,20 @@ class data_sort:
 	@staticmethod
 	def encode_data(strings):
 		try:
-			strings  = strings.encode('ascii', 'ignore') 
-		except Exception as e:
-			strings = strings.decode('unicode_escape').encode('ascii','ignore')
-		finally:
-			return strings
+			strings = strings.decode('unicode_escape').encode('ascii','ignore') 
+		except:
+			strings = strings.encode('utf-8')
+		else:
+			strings = strings.encode('ascii', 'ignore')
+		return strings
 
 
 	#put word in lowercase and clean any suffix	
+	@staticmethod
+	def lower_strings(strings):
+		return strings.lower()
+
+
 	@staticmethod	
 	def lower_clean_suffix(strings):
 		strings = strings.lower()
@@ -71,13 +78,13 @@ class data_sort:
 	def get_clean_address(self):
 		dataframe = self.read_data()
 		if 'town' in dataframe.columns:
-			dataframe.town = dataframe['town'].apply(lambda x : str(x))
+			if np.any(dataframe.town.apply(lambda x: type(x)) == NoneType):
+				dataframe.town = dataframe['town'].apply(lambda x : str(x))
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
-			postal_town = dataframe.town.dropna()
-			unique_postal_array = np.unique(np.array(postal_town))
-			return unique_postal_array
+			postal_town = dataframe.town.fillna('')
+			return postal_town
 		else:	
 			return ''
 
@@ -85,8 +92,8 @@ class data_sort:
 	#return cleaned names
 	def get_clean_names(self):
 		dataframe = self.read_data()
-		dataframe['name'] = dataframe['name'].apply(self.encode_data)
 		dataframe['name'] = dataframe['name'].apply(self.lower_clean_suffix)
+		dataframe['name'] = dataframe['name'].apply(self.encode_data)
 		dataframe['name'] = dataframe['name'].apply(self.replace_no_char)
 		dataframe['name'] = dataframe['name'].apply(self.add_break)
 		return dataframe['name']
@@ -114,14 +121,13 @@ class data_sort:
 	@staticmethod	
 	def delete_nonsense(count_dict):
 		for items in count_dict.keys():
-				patn = '#'+'[\w]+\&'*(len(items)-1) + '[\w]+#'
+				patn = ur'(?u)#'+ur'(?u)[\w]+\&'*(len(items)-1) + ur'(?u)[\w]+#'
 				i = '&'.join(items)
 				pattern = re.compile(patn)
-				if not pattern.match(i):
+				if not pattern.match(i.decode('utf-8')):
 					item = tuple(i.split('&'))
 					del count_dict[item]
 		return count_dict
-
 
 	#remove begin and end marks	
 	@staticmethod
@@ -129,13 +135,12 @@ class data_sort:
 		strings = ' '.join(strings)
 		strings = strings.replace('#','')
 		strings = strings.strip()
-		strings = str(strings)
 		return strings    
 
 
 	@staticmethod
 	def replace_no_char_on_tag(strings):
-		strings = strings.replace('-', '')
+		strings = strings.replace('-', ' ')
 		strings = strings.replace('.', '')
 		strings = strings.replace(',', '')
 		strings = strings.replace('\"', '')
@@ -153,7 +158,8 @@ class data_sort:
 	def aggreate_all(self, n = 2):
 		name_series = self.get_clean_names()
 		address_series = self.get_clean_address()
-		if len(address_series) == 0: pass
+		if len(address_series) == 0: 
+			name_series = name_series
 		#Delete the names containing postal adderss
 		else:
 			name_series = [e.replace(k, '') for e, k in zip(name_series, address_series)]
@@ -175,7 +181,6 @@ class data_sort:
 		data_tri['name'] = data_tri['name'].apply(self.tranformations)
 		data_four['name'] = data_four['name'].apply(self.tranformations)
 		data_five['name'] = data_five['name'].apply(self.tranformations)
-
 		name_uni = data_uni.name[data_uni.frequency >= 2]
 		name_bi = data_bi.name
 		#Compare one word with two words, if contains one word replace two with one word.
@@ -189,7 +194,6 @@ class data_sort:
 		all_data_df = all_data_df.groupby('name')['frequency'].sum().reset_index()
 		all_data_df.name = all_data_df.name.apply(self.replace_no_char_on_tag)
 		all_data_df.name = all_data_df.name.apply(self.place_nan).dropna()
-		all_data_df.name = all_data_df.name.apply(lambda x: str(x))
 		#return keyword that has frequency larger than or equal to n
 		return all_data_df[all_data_df['frequency'] >= n].reset_index().drop(['index'], axis = 1)
 
@@ -209,7 +213,7 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
-		return data 
+		return data
 
 
 	#Orgnize the results in to required format
