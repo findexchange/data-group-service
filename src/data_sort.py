@@ -213,12 +213,8 @@ class data_sort:
 	def get_tagged(self):
 		data = self.read_data()
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
-<<<<<<< HEAD
 		return data
-=======
-		data.applymap(self.encode_data).to_csv('../../../results.csv') #this line is for local testing 
-		return data 
->>>>>>> f9c4b9d... names series_bug
+
 
 
 	#Orgnize the results in to required format
@@ -233,6 +229,3 @@ class data_sort:
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
 
-f = '../../../sample_input_with_town.json'
-t = data_sort(f)
-t.get_tagged()
