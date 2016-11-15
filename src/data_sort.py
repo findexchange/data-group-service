@@ -5,6 +5,7 @@ import re
 import json
 import numpy as np
 from types import NoneType
+from clustering import get_hirachy
 
 class data_sort:
 
@@ -206,26 +207,27 @@ class data_sort:
 				target_df = check_word
 			else:
 				target_df = target_df
-		return target_df    
+		return target_df
 
 	
 	#create a column called tags
 	def get_tagged(self):
 		data = self.read_data()
-		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
-		return data
-
-
-
-	#Orgnize the results in to required format
-	def output_data(self):
-		data = self.get_tagged()
 		if 'town' in data.columns: 
 			data = data.drop(['town'], axis = 1)
+		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
+		data = data.applymap(self.encode_data)
+		result = get_hirachy(data)
+		return result
+
+
+
+	#Orgnize the results in to required output format
+	def output_data(self):
+		data = self.get_tagged()
 		new_data1 = data.groupby('tags')['_id'].apply(lambda x: list(x)).reset_index()
 		new_data2 = data.groupby('tags').count().reset_index().drop(['_id'], axis = 1).rename(columns = {'name':'count'})
 		combined_output = pd.merge(new_data1, new_data2, on = 'tags').rename(columns={'_id':'rows'})
 		combined_output.index.name = 'groupName_Id'
 		combined_output.reset_index(inplace = True)
 		return combined_output.to_json(orient = 'records')
-
