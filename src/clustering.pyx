@@ -71,7 +71,7 @@ def get_hirachy(data,threshold = 0.5):
 	df = pd.DataFrame(pd.Series(dicti).reset_index(drop = True)).rename(columns = {0: 'group'})
 
 	tttt = df.group.apply(_seperate_to_cols)
-	tttt = tttt.apply(lambda x: x.fillna(x[0]),axis=1).applymap(lambda x: list(x.split()))
+	tttt = tttt.apply(lambda x: x.fillna(x[0]),axis=1)#.applymap(lambda x: list(x.split()),axis = 1)
 	def _getclean_group(glist):
 		eee = []
 		for i in glist:

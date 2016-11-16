@@ -217,8 +217,9 @@ class data_sort:
 			data = data.drop(['town'], axis = 1)
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
 		data = data.applymap(self.encode_data)
+		print type(data)
 		result = get_hirachy(data)
-		return result
+		return data
 
 
 
