@@ -17,11 +17,12 @@ cdef double _jaccard(set set1, set set2):
 	union_len = len(set1) + len(set2) - intersection_len
 	return 1 - float(intersection_len)/float(union_len)
 
-	
 
 def get_tags(data):
 	tags = data.tags.drop_duplicates().reset_index(drop = True)
 	return tags
+
+
 
 def generated_matrix(data):
 	tags  = get_tags(data)
@@ -34,21 +35,26 @@ def generated_matrix(data):
 	return normal_matrix
 
 
+
 def _seperate_to_cols(list_string):
 	return pd.Series(list_string)	
 
-
-
+	
 def get_hirachy(data,threshold = 0.5):
 	matrix = generated_matrix(data)
 	
 	tags = get_tags(data)
 	
 	l = np.where(matrix < threshold)
+	 
 	pairs = zip(*l)
 	array = []
 	for i in pairs:
 		array.append(i)
+
+	if len(array) == 0:
+		print "No Hirachy Clustering Generated"
+		return data
 
 	test_d = pd.DataFrame(array, columns = ['first_col', 'second_col'])
 	
@@ -71,7 +77,7 @@ def get_hirachy(data,threshold = 0.5):
 	df = pd.DataFrame(pd.Series(dicti).reset_index(drop = True)).rename(columns = {0: 'group'})
 
 	tttt = df.group.apply(_seperate_to_cols)
-	tttt = tttt.apply(lambda x: x.fillna(x[0]),axis=1)#.applymap(lambda x: list(x.split()),axis = 1)
+	tttt = tttt.apply(lambda x: x.fillna(x[0]),axis=1).applymap(lambda x: list(x.split()))
 	def _getclean_group(glist):
 		eee = []
 		for i in glist:
