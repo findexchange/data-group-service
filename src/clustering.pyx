@@ -27,7 +27,6 @@ def get_tags(data):
 def generated_matrix(data):
 	tags  = get_tags(data)
 	from itertools import combinations
-	# cdef np.ndarray 
 	jaccard_generator = np.array([_jaccard(set(tag1.split()), set(tag2.split())) for tag1, tag2 in combinations(tags, r=2)])
 	flattened_matrix = np.fromiter(jaccard_generator, dtype=np.float64)
 	normal_matrix = distance.squareform(flattened_matrix)
