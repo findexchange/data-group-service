@@ -23,7 +23,7 @@ before_install:
 
 install: 
   - conda install --yes python=$TRAVIS_PYTHON_VERSION pip numpy scipy pandas scipy
-
+  - 'pip install -r requirements.txt'
 #run tests
 script: 
   - python ./test/flask_test.py
