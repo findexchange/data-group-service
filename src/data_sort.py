@@ -8,7 +8,7 @@ import re
 import json
 import numpy as np
 from types import NoneType
-from clustering import get_hirachy
+from clustering.clustering import get_hirachy
 
 class data_sort:
 
