@@ -1,14 +1,14 @@
 #  -*- coding: utf-8 -*-
 import os
 import sys
-sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath(''))
 import pandas as pd
 from collections import Counter
 import re
 import json
 import numpy as np
 from types import NoneType
-from clustering.clustering import get_hirachy
+from clustering_m.clustering import get_hirachy
 
 class data_sort:
 
