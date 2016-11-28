@@ -23,6 +23,7 @@ before_install:
 install: 
   - conda install --yes python=$TRAVIS_PYTHON_VERSION pip numpy scipy pandas
   - 'pip install -r requirements.txt'
+  -  python src/clustering_m/ssetup.py build_ext -i
   
 before_script:
   - export PYTHONPATH=$PYTHONPATH:$(pwd)
