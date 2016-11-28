@@ -18,12 +18,10 @@ before_install:
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda update --yes conda
-  - export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 install: 
   - conda install --yes python=$TRAVIS_PYTHON_VERSION pip numpy scipy pandas
   - 'pip install -r requirements.txt'
-  -  python ./src/clustering_m/setup.py build_ext -i
   
 before_script:
   - export PYTHONPATH=$PYTHONPATH:$(pwd)
