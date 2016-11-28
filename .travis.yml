@@ -1,7 +1,7 @@
 language: python
 python:
   - "2.7"
-  - "pypy-5.6.0"
+  - "pypy-5.3.1"
  
 cache: apt
 addons:
