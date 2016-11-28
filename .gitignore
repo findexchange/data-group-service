@@ -95,7 +95,9 @@ src/clustering_m/build
 # Things specific to this project #
 ###################################
 
-src/clustering_m/clustering.c
+src/clustering_m/*.c
+src/clustering_m/build
+src/clustering_m/setup.py
 
 
 
