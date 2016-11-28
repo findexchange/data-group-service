@@ -1,2 +1,5 @@
-from flask_app import app
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))
 from clustering_m.clustering import get_hirachy
