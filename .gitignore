@@ -95,8 +95,8 @@ src/clustering_m/build
 # Things specific to this project #
 ###################################
 
-data-group-service/src/clustering_m/clustering.c
-data-group-service/src/clustering_m/setup.py
+src/clustering_m/clustering.c
+src/clustering_m/setup.py
 
 
 
