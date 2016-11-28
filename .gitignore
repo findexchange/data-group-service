@@ -97,6 +97,7 @@ src/clustering_m/build
 
 src/clustering_m/*.c
 src/clustering_m/build
+test/results.csv
 
 
 

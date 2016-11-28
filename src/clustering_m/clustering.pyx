@@ -38,7 +38,7 @@ def generated_matrix(data):
 def _seperate_to_cols(list_string):
 	return pd.Series(list_string)	
 
-	
+@cython.boundscheck(False)	
 def get_hirachy(data,threshold = 0.5):
 	matrix = generated_matrix(data)
 	
@@ -55,9 +55,9 @@ def get_hirachy(data,threshold = 0.5):
 		print "No Hirachy Clustering Generated"
 		return data
 
-	test_d = pd.DataFrame(array, columns = ['first_col', 'second_col'])
+	temp_df = pd.DataFrame(array, columns = ['first_col', 'second_col'])
 	
-	grouped = test_d.groupby('first_col')['second_col'].apply(lambda x: list(x)).reset_index()
+	grouped = temp_df.groupby('first_col')['second_col'].apply(lambda x: list(x)).reset_index()
 
 	for e,k in zip(grouped.first_col, grouped.second_col):
 		k.append(e)
@@ -75,18 +75,18 @@ def get_hirachy(data,threshold = 0.5):
 	
 	df = pd.DataFrame(pd.Series(dicti).reset_index(drop = True)).rename(columns = {0: 'group'})
 
-	tttt = df.group.apply(_seperate_to_cols)
-	tttt = tttt.apply(lambda x: x.fillna(x[0]),axis=1).applymap(lambda x: list(x.split()))
+	fulfilled_df = df.group.apply(_seperate_to_cols)
+	fulfilled_df = fulfilled_df.apply(lambda x: x.fillna(x[0]),axis=1).applymap(lambda x: list(x.split()))
 	def _getclean_group(glist):
 		eee = []
 		for i in glist:
 			eee.extend(i)
 		dd = Counter(eee)
-		ddd = {k: v for k, v in dd.iteritems() if v >= len(tttt.columns)-1}
+		ddd = {k: v for k, v in dd.iteritems() if v >= len(fulfilled_df.columns)-1}
 		return ddd.keys()
-	refined_tags = tttt.apply(_getclean_group, axis = 1)
+	refined_tags = fulfilled_df.apply(_getclean_group, axis = 1)
 	
-	ordered_columns = tttt.loc[:,0]
+	ordered_columns = fulfilled_df.loc[:,0]
 	
 	ddf = pd.concat([pd.DataFrame(ordered_columns, columns=['names']),pd.DataFrame(refined_tags, columns=['intersect']).apply(lambda x: list(x), axis=0)], axis =1, join_axes=[pd.DataFrame(ordered_columns).index])
 	
@@ -94,10 +94,10 @@ def get_hirachy(data,threshold = 0.5):
 	for m, k, i in zip(ddf.index,ddf.names, ddf.intersect):
 			diclst[m].append({i[l]: k.index(i[l]) for l in range(len(i))})
 
-	dddf = pd.DataFrame(pd.Series(diclst), columns= ['postional'])
+	dic_df = pd.DataFrame(pd.Series(diclst), columns= ['postional'])
 	
-	dddf.postional= dddf.postional.apply(lambda x : x[0]).apply(lambda x : sorted(x.keys() ,key = x.get)).apply(lambda x: ' '.join(x))        
-	new_d = df.join(dddf)
+	dic_df.postional= dic_df.postional.apply(lambda x : x[0]).apply(lambda x : sorted(x.keys() ,key = x.get)).apply(lambda x: ' '.join(x))        
+	new_df = df.join(dic_df)
 
 	g = []
 	for i in t.tolist():
@@ -111,28 +111,27 @@ def get_hirachy(data,threshold = 0.5):
 	from itertools import product
 
 	results_dict = dict()
-	for i, k in product(shrinked_tags,new_d.group):
+	for i, k in product(shrinked_tags,new_df.group):
 		if i in k:
 			results_dict[i]  = k
-	new_a = pd.Series(results_dict).reset_index().rename(columns = {0: 'group'})
-	new_a.group = new_a.group.apply(lambda x:frozenset(x))
-	new_d.group = new_d.group.apply(lambda x: frozenset(x))
+	temp_re = pd.Series(results_dict).reset_index().rename(columns = {0: 'group'})
+	temp_re.group = temp_re.group.apply(lambda x:frozenset(x))
+	new_df.group = new_df.group.apply(lambda x: frozenset(x))
 
-	merged_data = new_a.merge(new_d, on = 'group', how = 'inner')
+	merged_data = temp_re.merge(new_df, on = 'group', how = 'inner')
 	merged_data.rename(columns={'index': 'tags'}, inplace= True)
 
 	merged_data.drop('group', inplace= True, axis = 1)
 
 
 
-	test = merged_data.to_dict(orient= 'split')['data']
+	dat_to_dic = merged_data.to_dict(orient= 'split')['data']
 
-	new_test = dict()
-	for i, k in test:
-		new_test[i] = k
+	index_dict = dict()
+	for i, k in dat_to_dic:
+		index_dict[i] = k
 	
-	# data = data
-	data['positional'] = data.tags.map(new_test)
+	data['positional'] = data.tags.map(index_dict)
 	data.positional = data.positional.fillna(data.tags)
 	data = data.drop(['tags'], axis = 1).rename(columns = {'positional': 'tags'})
 
