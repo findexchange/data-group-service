@@ -96,7 +96,6 @@ src/clustering_m/build
 ###################################
 
 src/clustering_m/clustering.c
-src/clustering_m/setup.py
 
 
 
