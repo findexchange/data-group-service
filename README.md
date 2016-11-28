@@ -3,6 +3,11 @@
 ## Start service
 
 In the project's folder run:
+first need to compile ```clusterng.pyx```:
+```
+python setup.py build_ext -i
+```
+then:
 ```
 docker-compose up -d
 ```
