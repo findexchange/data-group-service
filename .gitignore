@@ -87,3 +87,18 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+
+# Documentation generated files #
+src/clustering_m/build
+
+# Things specific to this project #
+###################################
+
+data-group-service/src/clustering_m/clustering.c
+data-group-service/src/clustering_m/setup.py
+
+
+
+
+
