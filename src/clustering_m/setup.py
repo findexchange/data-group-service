@@ -1,9 +1,14 @@
 from distutils.core import setup
-from Cython.Build import cythonize
+from distutils.core import Extension
+from Cython.Distutils import build_ext
 import numpy
 
+extensions = [
+	Extension("clustering", ["clustering.pyx"],
+		include_dirs = [numpy.get_include()]),	
+		]
+
 setup(
-  name = 'clustering app',
-  ext_modules = cythonize("./clustering.pyx"),
-  include_dirs=[numpy.get_include()]
+	cmdclass = { 'build_ext': build_ext },
+	ext_modules = extensions,
 )
