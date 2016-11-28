@@ -5,7 +5,8 @@ import re
 import json
 import numpy as np
 from types import NoneType
-from clustering_m.clustering import get_hirachy
+# from clustering_m.clustering import get_hirachy
+from clustering_m import clustering_test
 
 class data_sort:
 
@@ -217,7 +218,8 @@ class data_sort:
 			data = data.drop(['town'], axis = 1)
 		data['tags'] =  data.name.apply(self.encode_data).apply(lambda x: x.lower()).apply(self.replace_no_char).apply(self.replace_no_char_on_tag).apply(self.tagging)
 		data = data.applymap(self.encode_data)
-		result = get_hirachy(data)
+		result = data
+		# result = get_hirachy(data)
 		return result
 
 
