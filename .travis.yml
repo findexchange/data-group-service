@@ -28,4 +28,5 @@ before_script:
 
 #run tests
 script: 
+  - python setup.py build_ext -i
   - python ./test/flask_test.py
