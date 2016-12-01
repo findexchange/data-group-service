@@ -79,8 +79,7 @@ class data_sort:
 	def get_clean_address(self):
 		dataframe = self.read_data()
 		if 'town' in dataframe.columns:
-			if np.any(dataframe.town.apply(lambda x: type(x)) == NoneType):
-				dataframe.town = dataframe['town'].apply(lambda x : str(x))
+			dataframe.town.fillna("", inplace = True)
 			dataframe.town = dataframe['town'].str.lower()
 			dataframe.town = dataframe['town'].apply(self.encode_data)
 			dataframe.town = dataframe['town'].apply(self.replace_no_char)
