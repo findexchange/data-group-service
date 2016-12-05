@@ -2,7 +2,11 @@
 [![Build Status](https://travis-ci.org/findexchange/data-group-service.svg?branch=master)](https://travis-ci.org/findexchange/data-group-service)
 ## Start service
 
-In the project's folder run:
+In the project's folder first need to compile ```clusterng.pyx```, run:
+```
+python setup.py build_ext -i
+```
+then run:
 ```
 docker-compose up -d
 ```
