@@ -91,7 +91,7 @@ def get_hirachy(data,threshold = 0.5):
 
 	refined_tags = fulfilled_df.apply(_getclean_group, axis = 1)
 	
-	if len(refined_tags.columns) == 2:
+	if isinstance(refined_tags, pd.DataFrame):
 		len(refined_tags.columns)
 		temp_list = []
 		temp_series = pd.Series()
