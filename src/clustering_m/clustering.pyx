@@ -77,15 +77,30 @@ def get_hirachy(data,threshold = 0.5):
 
 	fulfilled_df = df.group.apply(_seperate_to_cols)
 	fulfilled_df = fulfilled_df.apply(lambda x: x.fillna(x[0]),axis=1).applymap(lambda x: list(x.split()))
+	
 	def _getclean_group(glist):
 		eee = []
-		for i in glist:
-			eee.extend(i)
-		dd = Counter(eee)
-		ddd = {k: v for k, v in dd.iteritems() if v >= len(fulfilled_df.columns)-1}
-		return ddd.keys()
+		if len(fulfilled_df.columns) > 2:
+			for i in glist:
+				eee.extend(i)
+				dd = Counter(eee)
+				ddd = [k for k, v in dd.iteritems() if v >=len(fulfilled_df.columns)-1]
+		else:
+			ddd = list(set(glist[0]).intersection(*glist))
+		return ddd
+
 	refined_tags = fulfilled_df.apply(_getclean_group, axis = 1)
 	
+	if isinstance(refined_tags, pd.DataFrame):
+		len(refined_tags.columns)
+		temp_list = []
+		temp_series = pd.Series()
+		for i in refined_tags.columns:
+			temp_list.append(refined_tags.loc[:,i][0])
+			for d in range(len(refined_tags)):
+				temp_series.set_value(d,temp_list)
+		refined_tags = temp_series
+
 	ordered_columns = fulfilled_df.loc[:,0]
 	
 	ddf = pd.concat([pd.DataFrame(ordered_columns, columns=['names']),pd.DataFrame(refined_tags, columns=['intersect']).apply(lambda x: list(x), axis=0)], axis =1, join_axes=[pd.DataFrame(ordered_columns).index])
